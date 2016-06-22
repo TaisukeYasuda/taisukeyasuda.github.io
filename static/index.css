@@ -1,0 +1,36 @@
+.center {
+  text-align: center;
+}
+
+#name {
+  font-size: 5em;
+}
+
+.contact-container {
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.school {
+  padding: 50px;
+}
+
+.courses {
+  text-align: left;
+}
+
+.exp {
+  padding: 50px;
+}
+
+.exp-description {
+  width: 80%;
+  text-align: left;
+}
+
+footer {
+  height: 4em;
+}
