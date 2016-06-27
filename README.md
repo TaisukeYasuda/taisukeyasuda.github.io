@@ -1,2 +1,2 @@
-# Personal Website
-Just a simple static website. 
+# Personal Websit
+My personal website. 
