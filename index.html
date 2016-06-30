@@ -4,12 +4,20 @@
   <meta charset="utf-8">
   <title>Taisuke Yasuda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- React JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.16/browser.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
   <link rel="stylesheet" type="text/css" href="static/index.css">
-  <script type="text/javascript" src="static/index.js"></script>
+  <script type="text/javascript" src="static/js/index.js"></script>
+  <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,7 +26,6 @@
 
     ga('create', 'UA-78770665-1', 'auto');
     ga('send', 'pageview');
-
   </script>
 </head>
 
@@ -60,80 +67,45 @@
 
       <div id="education" class="tab-pane fade">
         <h2>Education</h2>
-        <p>Where and what I have studied: the coursework that I have done can also
-        be found here.</p>
         <div class="center">
           <div class="panel school">
             <center><img src="static/img/cmu.png" alt="cmu" class="img-circle" width=100 height=100></img></center>
             <h3>Carnegie Mellon University</h3>
-            <h4>2015 - 2019, GPA 3.80</h4>
+            <h4>2015 - 2019, GPA 3.83</h4>
             <h4>Honors Program in Mathematics, Additional Major in Computer Science</h4>
             <br>
 
-            <h4> Coursework </h4>
-              <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#fall2016">Fall 2016</a>
-                    </h4>
-                  </div>
-                  <div id="fall2016" class="panel-collapse collapse courses">
-                    <ul class="list-group">
-                      <li class="list-group-item">21-235 Math Studies Analysis (Honors)</li>
-                      <li class="list-group-item">21-237 Math Studies Algebra (Honors)</li>
-                      <li class="list-group-item">21-325 Probability Theory (Honors)</li>
-                      <li class="list-group-item">21-295 Putnam Seminar</li>
-                      <li class="list-group-item">15-150 Principles of Functional Programming</li>
-                      <li class="list-group-item">15-751 A Theorist's Toolkit (Graduate)</li>
-                    </ul>
-                  </div><div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#summer2016">Summer 2016</a>
-                    </h4>
-                  </div>
-                  <div id="summer2016" class="panel-collapse collapse courses">
-                    <ul class="list-group">
-                      <li class="list-group-item">82-132 Elementary Chinese II</li>
-                      <li class="list-group-item">82-131 Elementary Chinese I</li>
-                      <li class="list-group-item">09-217 Organic Chemistry</li>
-                    </ul>
-                  </div>
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#spring2016">Spring 2016</a>
-                    </h4>
-                  </div>
-                  <div id="spring2016" class="panel-collapse collapse courses">
-                    <ul class="list-group">
-                      <li class="list-group-item">21-261 Ordinary Differential Equations</li>
-                      <li class="list-group-item">21-269 Vector Analysis (Honors)</li>
-                      <li class="list-group-item">15-122 Principles of Imperative Computation</li>
-                      <li class="list-group-item">15-251 Great Theoretical Ideas in Computer Science</li>
-                      <li class="list-group-item">03-161 Molecules to Mind</li>
-                      <li class="list-group-item">03-445 Research in Neuroscience</li>
-                    </ul>
-                  </div>
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#fall2015">Fall 2015</a>
-                  </div>
-                  <div id="fall2015" class="panel-collapse collapse courses">
-                    <ul class="list-group">
-                      <li class="list-group-item">21-128 Mathematical Proofs and Concepts</li>
-                      <li class="list-group-item">21-242 Matrix Theory (Honors)</li>
-                      <li class="list-group-item">15-112 Fundamentals of Programming and Computer Science</li>
-                      <li class="list-group-item">98-012 Fun with Robots</li>
-                      <li class="list-group-item">76-101 Interpretation and Argument</li>
-                      <li class="list-group-item">38-101 Eureka! Discovery and Impact</li>
-                    </ul>
-                  </div>
+            <h4 class="bold"> Selected Coursework </h4>
+            <center>
+              <div class="courses">
+                <div style="float: left; width: 50%;">
+                  <h4> Mathematics: </h4>
+                  <ul>
+                    <li> (Honors) Math Studies Algebra I (21-237, Fall 2016) </li>
+                    <li> (Honors) Math Studies Analysis I (21-235, Fall 2016) </li>
+                    <li> (Honors) Probability Theory (21-325, Fall 2016) </li>
+                    <li> (Honors) Vector Analysis (21-269, Spring 2016) </li>
+                    <li> (Honors) Matrix Theory (21-242, Fall 2015) </li>
+                  </ul>
+                </div>
+
+                <div style="float: right; width: 50%;">
+                  <h4> Computer Science: </h4>
+                  <ul>
+                    <li> (Graduate) A Theorist's Toolkit (15-751, Fall 2016) </li>
+                    <li> Principles of Functional Programming (15-150, Fall 2016) </li>
+                    <li> Great Theoretical Ideas in Computer Science (15-251, Spring 2016) </li>
+                    <li> Principles of Imperative Computation (15-122, Spring 2016) </li>
+                  </ul>
                 </div>
               </div>
+            </center>
 
-              <a href="#home">
-                  <span class="glyphicon glyphicon-chevron-up"></span>
-              </a>
+            <div style="clear: both"></div>
+
+            <a href="#home">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
           </div>
 
           <div class="panel school">
@@ -143,31 +115,16 @@
             <h4>Dual Enrollment in Mathematics</h4>
             <br>
 
-            <h4> Coursework </h4>
-            <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#fall2014">Fall 2014</a>
-                  </h4>
-                </div>
-                <div id="fall2014" class="panel-collapse collapse courses">
-                  <ul class="list-group">
-                    <li class="list-group-item">MAS2103 Linear Algebra</li>
+            <h4 class="bold"> Coursework </h4>
+            <center>
+              <div class="courses">
+                <h4> Mathematics: </h4>
+                  <ul>
+                    <li> Linear Algebra (MAS2103, Fall 2014) </li>
+                    <li> Multivariable and Vector Calculus (MAC2313, Fall 2013) </li>
                   </ul>
-                </div>
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#fall2013">Fall 2013</a>
-                  </h4>
-                </div>
-                <div id="fall2013" class="panel-collapse collapse courses">
-                  <ul class="list-group">
-                    <li class="list-group-item">MAC2313 Multivariable and Vector Calculus</li>
-                  </ul>
-                </div>
               </div>
-            </div>
+            </center>
 
             <a href="#home">
                 <span class="glyphicon glyphicon-chevron-up"></span>
