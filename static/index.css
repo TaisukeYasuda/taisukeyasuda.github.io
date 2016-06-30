@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.center-div {
+  margin: auto;
+}
+
 #name {
   font-size: 5em;
 }
@@ -19,7 +23,12 @@ p {
 }
 
 .courses {
+  width: 80%;
   text-align: left;
+}
+
+.courses p {
+  font-size: 1em;
 }
 
 .exp {
@@ -33,4 +42,8 @@ p {
 
 footer {
   height: 4em;
+}
+
+.bold {
+  font-weight: bold;
 }
