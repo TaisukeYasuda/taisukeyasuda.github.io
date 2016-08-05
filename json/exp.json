@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Carnegie Mellon Informatics and Mathematics Competition",
+    "img": "static/img/cmimc-logo.png",
+    "role": "Organizer",
+    "dates": "Sept 2015 - Present",
+    "descript": "I am a member of the founding year organization team of the <strong><a href='http://cmimc.co/'>Carnegie Mellon Informatics and Mathematics Competition</a></strong> for high schoolers. I worked on the logistics, solution writing, grading, and other miscellaneous tasks for the competition."
+  },
+  {
+    "name": "Carnegie Mellon University, Neuroscience Department, Barth Lab",
+    "img": "static/img/cmu-logo.png",
+    "role": "Research Assistant",
+    "dates": "Jan 2016 - Present",
+    "descript": "I started working in Professor <strong><a href='http://www.cmu.edu/bio/faculty/primary/barth.html'>Alison Barth</a></strong>'s lab when I took a research for credit course with her in the spring 2016 semester. I am continuing my work from this research project."
+  },
+  {
+    "name": "Max Planck Florida Institute for Neuroscience, Kwon Lab",
+    "img": "static/img/mpfi-logo.png",
+    "role": "Research and Programming Intern",
+    "dates": "Jun 2014 - Aug 2014",
+    "descript": "I worked in Professor <strong><a href='https://www.maxplanckflorida.org/our-science/our-scientists/hyungbae-kwon/'> Hyungbae Kwon</a></strong>'s lab during the Summer Research Program at the Max Planck Florida Institute for Neuroscience. I worked on the mathematics of a virtual reality system based on a cylindcrical screen used to monitor the brain activity of learning mice <i>in vivo</i>."
+  }
+]

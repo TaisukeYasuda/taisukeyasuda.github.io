@@ -1,49 +1,15 @@
-.center {
-  text-align: center;
-}
-
-.center-div {
-  margin: auto;
-}
-
-#name {
-  font-size: 5em;
-}
-
-.contact-container {
-  margin-top: 50px;
-}
-
-p {
-  font-size: 1.2em;
-}
-
-.school {
-  padding: 50px;
-}
-
-.courses {
-  width: 80%;
-  text-align: left;
-}
-
-.courses p {
-  font-size: 1em;
-}
-
-.exp {
-  padding: 50px;
-}
-
-.exp-description {
-  width: 80%;
-  text-align: left;
-}
-
-footer {
-  height: 4em;
-}
-
-.bold {
-  font-weight: bold;
-}
+.center {text-align: center;}
+.center-div {margin: auto;}
+#name {font-size: 5em;}
+p {font-size: 1.2em;}
+.school {padding: 50px;}
+.courses {width: 80%; text-align: left;}
+.courses p {font-size: 1em;}
+.exp {padding: 50px;}
+.exp-description {width: 80%; text-align: left;}
+.bold {font-weight: bold;}
+td#top {text-align: center; font-weight: bold; font-size: 15pt; padding: 20px;}
+.set-width {width: 75%; margin: auto;}
+.line {width: 75%; margin: auto; border-color: #009933;}
+.icon {font-size: 4em !important; padding: 20px;}
+li {font-size: 1em;}
