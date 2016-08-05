@@ -1,2 +1,2 @@
 # Personal Website
-My personal website. 
+My personal website, updated August 2016. 
