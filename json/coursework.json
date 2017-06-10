@@ -1,0 +1,68 @@
+var coursework =
+{
+  "spring18": {
+    "sem": "Spring",
+    "year": 2018,
+    "courses": []
+  },
+  "fall17": {
+    "sem": "Fall",
+    "year": 2017,
+    "courses": [
+      {"name": "Discrete Mathematics", "number": "21-701", "graduate": true},
+      {"name": "Measure and Integration", "number": "21-720", "graduate": true},
+      {"name": "Introduction to Differential Equations", "number": "21-632", "graduate": true},
+      {"name": "Computational Complexity Theory", "number": "15-855", "graduate": true},
+      {"name": "Computational Models of Neural Systems", "number": "15-883", "graduate": true}
+    ]
+  },
+  "spring17": {
+    "sem": "Spring",
+    "year": 2017,
+    "courses": [
+      {"name": "Math Studies Analysis II", "number": "21-236", "honors": true},
+      {"name": "Math Studies Algebra II", "number": "21-238", "honors": true},
+      {"name": "Complex Analysis", "number": "21-623", "graduate": true},
+      {"name": "Parallel and Sequential Data Structures and Algorithms", "number": "15-210"},
+      {"name": "Introduction to Computer Systems", "number": "15-213"}
+    ]
+  },
+  "fall16": {
+    "sem": "Fall",
+    "year": 2016,
+    "courses": [
+      {"name": "Math Studies Analysis I", "number": "21-235", "honors": true},
+      {"name": "Math Studies Algebra I", "number": "21-237", "honors": true},
+      {"name": "Probability Theory", "number": "21-325"},
+      {"name": "Putnam Seminar", "number": "21-295"},
+      {"name": "A Theorist's Toolkit", "number": "15-751", "graduate": true},
+      {"name": "Principles of Functional Programming", "number": "15-150"},
+      {"name": "Server-Side Scripting with Node.js", "number": "98-294"},
+      {"name": "Modern Version Control with Git", "number": "98-174"}
+    ]
+  },
+  "spring16": {
+    "sem": "Spring",
+    "year": 2016,
+    "courses": [
+      {"name": "Vector Analysis", "number": "21-269", "honors": true},
+      {"name": "Ordinary Differential Equations", "number": "21-261"},
+      {"name": "Great Theoretical Ideas in Computer Science", "number": "15-251"},
+      {"name": "Principles of Imperative Computation", "number": "15-122"},
+      {"name": "Research in Neuroscience", "number": "03-455"},
+      {"name": "Molecules to Mind", "number": "03-161"},
+      {"name": "Fun with Robots", "number": "98-012"}
+    ]
+  },
+  "fall15": {
+    "sem": "Fall",
+    "year": 2015,
+    "courses": [
+      {"name": "Matrix Theory", "number": "21-242", "honors": true},
+      {"name": "Concepts and Proofs of Mathematics", "number": "21-128"},
+      {"name": "Fundamentals of Programming and CS", "number": "15-112"},
+      {"name": "Interpretation and Argument", "number": "76-101"},
+      {"name": "MCS Seminar", "number": "38-101"}
+    ]
+  }
+}
