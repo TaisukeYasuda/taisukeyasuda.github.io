@@ -8,11 +8,11 @@ class Schedule extends React.Component {
   }
 
   componentDidMount() {
-    fetch('/assets/json/coursework.json', {
+    fetch('../assets/json/coursework.json', {
       method: 'GET'
     }).then(res => {
       return res.json()
-    }).then(function(res) {
+    }).then(res => {
       this.setState({
         coursework: res
       })
@@ -22,26 +22,31 @@ class Schedule extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        <table>
-          <tbody style={{'verticalAlign': 'top'}}>
-            <tr>
-              <td><Semester semester={coursework.fall17} /></td>
-              <td><Semester semester={coursework.spring18} /></td>
-            </tr>
-            <tr>
-              <td><Semester semester={coursework.fall16} /></td>
-              <td><Semester semester={coursework.spring17} /></td>
-            </tr>
-            <tr>
-              <td><Semester semester={coursework.fall15} /></td>
-              <td><Semester semester={coursework.spring16} /></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    )
+    var coursework = this.state.coursework
+    if (coursework) {
+      return (
+        <div>
+          <table>
+            <tbody style={{'verticalAlign': 'top'}}>
+              <tr>
+                <td><Semester semester={coursework.fall17} /></td>
+                <td><Semester semester={coursework.spring18} /></td>
+              </tr>
+              <tr>
+                <td><Semester semester={coursework.fall16} /></td>
+                <td><Semester semester={coursework.spring17} /></td>
+              </tr>
+              <tr>
+                <td><Semester semester={coursework.fall15} /></td>
+                <td><Semester semester={coursework.spring16} /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      )
+    } else {
+      return <div />
+    }
   }
 }
 
