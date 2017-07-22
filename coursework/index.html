@@ -15,6 +15,10 @@
   <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet"  type="text/css">
   <script src="../assets/vendor/katex-0.7.1/katex.min.js"></script>
   <link href="../assets/vendor/katex-0.7.1/katex.min.css" rel="stylesheet"  type="text/css">
+  <script src="//polygit.org/components/webcomponentsjs/webcomponents-loader.js"></script>
+
+  <!-- Polymer Components -->
+  <link rel="import" href="../components/coursework-cmu.html"> 
 
   <!-- Fonts -->
   <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
@@ -33,9 +37,6 @@
     ga('create', 'UA-78770665-1', 'auto');
     ga('send', 'pageview');
   </script>
-
-  <!-- Custom javascript -->
-  <script type="text/javascript" src="../assets/js/schedule.bundle.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
 
     <section>
       <h2>Carnegie Mellon University</h2>
-      <div id="schedule"></div>
+      <coursework-cmu></coursework-cmu>
     </section>
 
     <footer>
