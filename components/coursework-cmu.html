@@ -31,7 +31,7 @@
       constructor() {
         super();
         // get coursework from json file
-				fetch('/assets/json/coursework.json', {
+				fetch('../assets/json/coursework.json', {
           method: 'GET'
         }).then(res => {
           return res.json()
