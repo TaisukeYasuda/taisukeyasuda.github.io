@@ -11,7 +11,7 @@
       {"name": "Discrete Mathematics", "number": "21-701", "graduate": true},
       {"name": "Measure and Integration", "number": "21-720", "graduate": true},
       {"name": "Introduction to Differential Equations", "number": "21-632", "graduate": true},
-      {"name": "Computational Complexity Theory", "number": "15-855", "graduate": true},
+      {"name": "Algorithms for Big Data", "number": "15-859", "graduate": true},
       {"name": "Computational Models of Neural Systems", "number": "15-883", "graduate": true}
     ]
   },
