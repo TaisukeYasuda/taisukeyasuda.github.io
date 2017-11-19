@@ -2,7 +2,13 @@
   "spring18": {
     "sem": "Spring",
     "year": 2018,
-    "courses": []
+    "courses": [
+      {"name": "Advanced Real Analysis", "number": "21-723", "graduate": true},
+      {"name": "Probability", "number": "21-721", "graduate": true},
+      {"name": "Algorithms", "number": "15-451", "graduate": false},
+      {"name": "Parallel Computer Architecture and Programming", "number": "15-418", "graduate": false},
+      {"name": "Machine Learning", "number": "10-601", "graduate": true}
+    ]
   },
   "fall17": {
     "sem": "Fall",
