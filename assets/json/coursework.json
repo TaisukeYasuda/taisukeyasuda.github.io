@@ -5,9 +5,10 @@
     "courses": [
       {"name": "Advanced Real Analysis", "number": "21-723", "graduate": true},
       {"name": "Probability", "number": "21-721", "graduate": true},
-      {"name": "Algorithms", "number": "15-451", "graduate": false},
-      {"name": "Parallel Computer Architecture and Programming", "number": "15-418", "graduate": false},
-      {"name": "Machine Learning", "number": "10-601", "graduate": true}
+      {"name": "Algorithms", "number": "15-451"},
+      {"name": "Parallel Computer Architecture and Programming", "number": "15-418"},
+      {"name": "Machine Learning", "number": "10-601", "graduate": true},
+      {"name": "MCS PROPEL", "number": "38-301"}
     ]
   },
   "fall17": {
@@ -18,7 +19,8 @@
       {"name": "Measure and Integration", "number": "21-720", "graduate": true},
       {"name": "Introduction to Differential Equations", "number": "21-632", "graduate": true},
       {"name": "Algorithms for Big Data", "number": "15-859", "graduate": true},
-      {"name": "Computational Models of Neural Systems", "number": "15-883", "graduate": true}
+      {"name": "Computational Models of Neural Systems", "number": "15-883", "graduate": true},
+      {"name": "MCS Looking Outward", "number": "38-330"}
     ]
   },
   "spring17": {
@@ -29,7 +31,8 @@
       {"name": "Math Studies Algebra II", "number": "21-238", "honors": true},
       {"name": "Complex Analysis", "number": "21-623", "graduate": true},
       {"name": "Parallel and Sequential Data Structures and Algorithms", "number": "15-210"},
-      {"name": "Introduction to Computer Systems", "number": "15-213"}
+      {"name": "Introduction to Computer Systems", "number": "15-213"},
+      {"name": "MCS Looking Inward", "number": "38-230"}
     ]
   },
   "fall16": {
@@ -44,6 +47,21 @@
       {"name": "Principles of Functional Programming", "number": "15-150"},
       {"name": "Server-Side Scripting with Node.js", "number": "98-294"},
       {"name": "Modern Version Control with Git", "number": "98-174"}
+    ]
+  },
+  "sumII16": {
+    "sem": "Summer II",
+    "year": 2016,
+    "courses": [
+      {"name": "Elementary Chinese II", "number": "82-132"}
+    ]
+  },
+  "sumI16": {
+    "sem": "Summer I",
+    "year": 2016,
+    "courses": [
+      {"name": "Elementary Chinese I", "number": "82-131"},
+      {"name": "Organic Chemistry", "number": "09-217"}
     ]
   },
   "spring16": {
@@ -67,7 +85,7 @@
       {"name": "Concepts and Proofs of Mathematics", "number": "21-128"},
       {"name": "Fundamentals of Programming and CS", "number": "15-112"},
       {"name": "Interpretation and Argument", "number": "76-101"},
-      {"name": "MCS Seminar", "number": "38-101"}
+      {"name": "MCS Eureka", "number": "38-101"}
     ]
   }
 }

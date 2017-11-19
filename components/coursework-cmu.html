@@ -9,16 +9,20 @@
 		<table>
       <tbody style="vertical-align: top">
         <tr>
-          <td><semester-table semester={{coursework.fall17}}></semester-table></td>
           <td><semester-table semester={{coursework.spring18}}></semester-table></td>
+          <td><semester-table semester={{coursework.fall17}}></semester-table></td>
         </tr>
         <tr>
-          <td><semester-table semester={{coursework.fall16}}></semester-table></td>
           <td><semester-table semester={{coursework.spring17}}></semester-table></td>
+          <td><semester-table semester={{coursework.fall16}}></semester-table></td>
         </tr>
         <tr>
-          <td><semester-table semester={{coursework.fall15}}></semester-table></td>
+          <td><semester-table semester={{coursework.sumII16}}></semester-table></td>
+          <td><semester-table semester={{coursework.sumI16}}></semester-table></td>
+        </tr>
+        <tr>
           <td><semester-table semester={{coursework.spring16}}></semester-table></td>
+          <td><semester-table semester={{coursework.fall15}}></semester-table></td>
         </tr>
       </tbody>
     </table>
@@ -26,12 +30,12 @@
   <script>
     class CourseworkCMU extends Polymer.Element {
       static get is() { return "coursework-cmu"; }
-      
+
       // set this element's employees property
       constructor() {
         super();
         // get coursework from json file
-				fetch('../assets/json/coursework.json', {
+	    fetch('../assets/json/coursework.json', {
           method: 'GET'
         }).then(res => {
           return res.json()
