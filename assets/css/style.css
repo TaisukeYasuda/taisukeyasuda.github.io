@@ -1,4 +1,11 @@
+@font-face {
+  font-family: 'Droid Sans';
+  src: url(../fonts/droid-sans/DroidSans.ttf)
+}
+
 body {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
   overflow: hidden; }
 
 .container {
@@ -7,6 +14,7 @@ body {
   margin-top: 6rem;
   text-align: center; }
 .title {
+  font-size: 30px;
   text-align: center; }
 .contact {
   text-align: center;

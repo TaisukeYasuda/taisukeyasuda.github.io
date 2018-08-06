@@ -11,16 +11,12 @@
   <!-- Mobile specific metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Vendor-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//use.fontawesome.com/f2da0bb9e7.js"></script>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet"  type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/vendor/katex-0.7.1/katex.min.js"></script>
   <link href="assets/vendor/katex-0.7.1/katex.min.css" rel="stylesheet" type="text/css">
 
-  <!-- Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Fira+Sans:extra-light" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/skeleton.css" type="text/css" />
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -47,13 +43,13 @@
     <section class="header">
       <h1 class="title">Taisuke Yasuda</h1>
 
-      <a class="button button-primary" href="assets/docs/resume.pdf">Resume</a>
+      <a class="button button-primary" href="assets/docs/resume.pdf">Resume <i class="far fa-file-pdf"></i></a>
 
-      <p class="contact"><i class="fa fa-phone" aria-hidden="true"></i> (919)259-9967 &nbsp;&middot;&nbsp; <i class="fa fa-envelope" aria-hidden="true"></i> taisukey@andrew.cmu.edu &nbsp;&middot;&nbsp; <i class="fa fa-github" area-hidden="true"></i> <a href="https://www.github.com/TaisukeYasuda">taisukeyasuda</a> &nbsp;&middot;&nbsp; <i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/taisuke-yasuda-9497916b">taisuke-yasuda</a></p>
+      <p class="contact"><i class="fa fa-phone" aria-hidden="true"></i> (919)259-9967 &nbsp;&middot;&nbsp; <i class="fa fa-envelope" aria-hidden="true"></i> taisukey@andrew.cmu.edu &nbsp;&middot;&nbsp; <i class="fab fa-github"></i> <a href="https://www.github.com/TaisukeYasuda">taisukeyasuda</a> &nbsp;&middot;&nbsp; <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/taisuke-yasuda-9497916b">taisuke-yasuda</a></p>
 
       <div>
         <p>
-          Hi! It's a pleasure to have you here. I'm <b>Tai</b>, currently an undergrad at <b>Carnegie Mellon University</b> studying in the <b><a href="https://www.math.cmu.edu/undergraduate/honors.html">Honors Program in Mathematics</a></b> with an <b><a href="http://www.cs.cmu.edu/undergraduate-programs">Additional Major in Computer Science</a></b>. For more, check out my site!
+          Hi! It's a pleasure to have you here. I'm Tai, an undergrad at Carnegie Mellon University studying in the <a href="https://www.math.cmu.edu/undergraduate/honors.html">Honors Program in Mathematics</a> with an <a href="http://www.cs.cmu.edu/undergraduate-programs">Additional Major in Computer Science</a>. For more, check out my site!
         </p>
       </div>
     </section>
@@ -63,7 +59,8 @@
       <div class="container">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href="#education">Education</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#projects">Projects</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#projects">Research</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#projects">Software Projects</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#other">Other</a></li>
         </ul>
       </div>
@@ -72,18 +69,32 @@
     <section id="education">
       <h2>Education</h2>
       <div class="school">
-        <img class="edu-img" src="assets/images/cmu.png"></img>
+        <a href="https://www.cmu.edu/"><img class="edu-img" src="assets/images/cmu.png"></img></a>
         <h3>Carnegie Mellon University, 2015 - 2019</h3>
         <p>
-          BS, Mathematics (GPA 3.78) <br />
-          See <a href="coursework/">here</a> for a complete course schedule.
+          MS Mathematics <br />
+          BS Mathematics and Computer Science (GPA 3.79) <br />
+          <!--See <a href="coursework/">here</a> for a complete course schedule.-->
         </p>
       </div>
     </section>
 
+    <section id="research">
+      <h2>Research</h2>
+      <div class="research">
+        I am broadly interested in theoretical computer science and machine learning, and mathematical analysis. I'm particularly excited by provable algorithmic and statistical guarantees of learning algorithms, their tradeoffs, and corresponding lower bounds. Some projects I'm currently working on are:
+        <ul>
+          <li>Kernel query complexity with Prof. <a href="http://www.cs.cmu.edu/~dwoodruf/">David Woodruff</a></li>
+          <li>Asymptotic stability of Faraday oscillation solutions to viscous incompressible free boundary problems with Prof. <a href="http://math.cmu.edu/~iantice/">Ian Tice</a></li>
+          <li>Improvements to the slowness of Cahn-Hilliard phase boundary motion with Prof. <a href="http://giovannileoni.weebly.com/">Giovanni Leoni</a></li>
+        </ul>
+      </div>
+    </section>
+
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Software Projects</h2>
       <ul>
+        <li>Parallel Sketch (<a href="https://github.com/TaisukeYasuda/parallel-sketch">repo</a>)</li>
         <li><a href="http://staff.usmath.org">United States Mathematics Competition Association Website</a> (<a href="https://github.io/USMCA/website">repo</a>)</li>
         <li><a href="http://www.cmimc.org">Carnegie Mellon Informatics and Mathematics Competition Website</a> (<a href="https://github.com/CMIMC/website">repo</a>)</li>
         <li><a href="http://miami-tosho.herokuapp.com/">Japanese School Library Management Website</a> (<a href="https://github.com/TaisukeYasuda/tosho/">repo</a>)</li>
@@ -101,20 +112,53 @@
         <li><a href="http://www.youtube.com/watch?v=bS4IES_3hr8&t=28m30s">Paganini Violin Concerto No. 1 (Mov. 1)</a></li>
       </ul>
       and here are some awards and honors I have received:
-      <ul>
-        <li>2016 Carnegie Mellon All University Orchestra Concerto Competition (Winner)</li>
-        <li>2015 Allegro Society Music Scholarship (Winner)</li>
-        <li>2014 Dreyfoos Concerto Competition (Winner)</li>
-        <li>2014 Alhambra Concerto Competition (2nd Place)</li>
-        <li>2014 Florida All State Orchestra (Concertmaster)</li>
-        <li>2013 Florida All State Orchestra (Concertmaster)</li>
-        <li>2013 Florida Atlantic University Honors Orchestra (Concertmaster)</li>
-        <li>2012 North Carolina Symphony Concerto Competition (2nd Place)</li>
-      </ul>
+
+      <table style="width:100%">
+        <tr>
+          <td>2016</td>
+          <td>Carnegie Mellon All University Orchestra Concerto Competition</td>
+          <td>Winner</td>
+        </tr>
+        <tr>
+          <td>2015</td>
+          <td>Allegro Society Music Scholarship</td>
+          <td>Winner</td>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>Dreyfoos Concerto Competition</td>
+          <td>Winner</td>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>Alahambra Concerto Competition</td>
+          <td>Winner</td>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>Florida All State Orchestra</td>
+          <td>Concertmaster</td>
+        </tr>
+        <tr>
+          <td>2013</td>
+          <td>Florida All State Orchestra</td>
+          <td>Concertmaster</td>
+        </tr>
+        <tr>
+          <td>2013</td>
+          <td>Florida Atlantic University Honors Orchestra</td>
+          <td>Concertmaster</td>
+        </tr>
+        <tr>
+          <td>2012</td>
+          <td>North Carolina Symphony Concerto Competition</td>
+          <td>2nd Place</td>
+        </tr>
+      </table>
     </section>
 
     <footer>
-      Copyright &copy; 2017 Taisuke Yasuda
+      Copyright &copy; 2018 Taisuke Yasuda
     </footer>
   </div>
 
@@ -122,9 +166,9 @@
 <!-- Preloader -->
 <script type="text/javascript">
     //<![CDATA[
-        $(window).on('load', function() { // makes sure the whole site is loaded 
-            $('#status').fadeOut(); // will first fade out the loading animation 
-            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+        $(window).on('load', function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
             $('body').delay(350).css({'overflow':'visible'});
           })
     //]]>
