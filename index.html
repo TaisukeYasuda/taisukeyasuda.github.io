@@ -12,15 +12,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Vendor-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//use.fontawesome.com/f2da0bb9e7.js"></script>
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script defer src="//use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
   <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet"  type="text/css">
   <script src="assets/vendor/katex-0.7.1/katex.min.js"></script>
   <link href="assets/vendor/katex-0.7.1/katex.min.css" rel="stylesheet" type="text/css">
 
   <!-- Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Fira+Sans:extra-light" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/skeleton.css" type="text/css" />
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -49,7 +47,7 @@
 
       <a class="button button-primary" href="assets/docs/resume.pdf">Resume</a>
 
-      <p class="contact"><i class="fa fa-phone" aria-hidden="true"></i> (919)259-9967 &nbsp;&middot;&nbsp; <i class="fa fa-envelope" aria-hidden="true"></i> taisukey@andrew.cmu.edu &nbsp;&middot;&nbsp; <i class="fa fa-github" area-hidden="true"></i> <a href="https://www.github.com/TaisukeYasuda">taisukeyasuda</a> &nbsp;&middot;&nbsp; <i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/taisuke-yasuda-9497916b">taisuke-yasuda</a></p>
+      <p class="contact"><i class="fa fa-phone" aria-hidden="true"></i> (919)259-9967 &nbsp;&middot;&nbsp; <i class="fa fa-envelope" aria-hidden="true"></i> taisukey@andrew.cmu.edu &nbsp;&middot;&nbsp; <i class="fab fa-github"></i> <a href="https://www.github.com/TaisukeYasuda">taisukeyasuda</a> &nbsp;&middot;&nbsp; <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/taisuke-yasuda-9497916b">taisuke-yasuda</a></p>
 
       <div>
         <p>
@@ -75,8 +73,8 @@
         <img class="edu-img" src="assets/images/cmu.png"></img>
         <h3>Carnegie Mellon University, 2015 - 2019</h3>
         <p>
-          BS, Mathematics (GPA 3.78) <br />
-          See <a href="coursework/">here</a> for a complete course schedule.
+          MS, Mathematics <br />
+          BS, Mathematics and Computer Science <br />
         </p>
       </div>
     </section>
@@ -84,6 +82,7 @@
     <section id="projects">
       <h2>Projects</h2>
       <ul>
+        <li>Parallel Sketch (<a href="https://github.com/TaisukeYasuda/parallel-sketch">repo</a>)</li>
         <li><a href="http://staff.usmath.org">United States Mathematics Competition Association Website</a> (<a href="https://github.io/USMCA/website">repo</a>)</li>
         <li><a href="http://www.cmimc.org">Carnegie Mellon Informatics and Mathematics Competition Website</a> (<a href="https://github.com/CMIMC/website">repo</a>)</li>
         <li><a href="http://miami-tosho.herokuapp.com/">Japanese School Library Management Website</a> (<a href="https://github.com/TaisukeYasuda/tosho/">repo</a>)</li>
@@ -114,7 +113,7 @@
     </section>
 
     <footer>
-      Copyright &copy; 2017 Taisuke Yasuda
+      Copyright &copy; 2018 Taisuke Yasuda
     </footer>
   </div>
 
@@ -122,9 +121,9 @@
 <!-- Preloader -->
 <script type="text/javascript">
     //<![CDATA[
-        $(window).on('load', function() { // makes sure the whole site is loaded 
-            $('#status').fadeOut(); // will first fade out the loading animation 
-            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+        $(window).on('load', function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
             $('body').delay(350).css({'overflow':'visible'});
           })
     //]]>
