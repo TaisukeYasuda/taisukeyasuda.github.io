@@ -1,19 +1,12 @@
-@font-face {
-  font-family: 'Droid Sans';
-  src: url(../fonts/droid-sans/DroidSans.ttf);
-}
-
 body {
-  font-family: 'Ubuntu', 'Droid Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   overflow: hidden; }
 
 .container {
   max-width: 800px; }
 .header {
   margin-top: 6rem;
-  text-align: center; }
-.title {
-  text-align: center; }
+  text-align: left; }
 .contact {
   text-align: center;
   margin-bottom: 10px; }
@@ -21,9 +14,8 @@ body {
   display: none; }
 .school {
   text-align: center; }
-.space {
-  margin-right: 10px;
-}
+.social-links {
+  text-align: left; }
 
 footer {
   width: 100%;
@@ -50,7 +42,7 @@ footer {
   position:absolute;
   left:50%; /* centers the loading animation horizontally one the screen */
   top:50%; /* centers the loading animation vertically one the screen */
-  background-image:url(../img/status.gif); /* path to your loading animation */
+  /*background-image:url(../img/status.gif);*/ /* path to your loading animation */
   background-repeat:no-repeat;
   background-position:center;
   margin:-100px 0 0 -100px; /* is width and height divided by two */
