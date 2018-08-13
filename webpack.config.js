@@ -5,7 +5,8 @@ const webpack = require('webpack'),
 
 module.exports = {
   entry: {
-    index: path.resolve(SRC_DIR, 'index.jsx')
+    index: path.resolve(SRC_DIR, 'index.jsx'),
+    coursework: path.resolve(SRC_DIR, 'coursework.jsx')
   },
   output: {
     path: BUILD_DIR,
@@ -33,6 +34,11 @@ module.exports = {
         use: [
           'url-loader?limit=8192'
         ]
+      },
+      {
+        type: 'javascript/auto',
+        test: /\.json$/,
+        use: [ 'json-loader?name=[name].[ext]' ]
       }
     ]
   }

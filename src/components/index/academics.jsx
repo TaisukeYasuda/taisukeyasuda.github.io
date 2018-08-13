@@ -9,6 +9,7 @@ const Academics = () => (
       <p>
         MS, Mathematics <br />
         BS, Mathematics and Computer Science <br />
+        (<a href="/coursework">list of coursework</a>)
       </p>
     </div>
     <h3>Research</h3>

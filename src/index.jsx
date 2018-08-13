@@ -5,7 +5,7 @@ const $ = JQuery.default;
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import * as Components from './components';
+import * as Components from './components/index';
 import './css/skeleton.css';
 import './css/style.css';
 import './css/sticky.css';
