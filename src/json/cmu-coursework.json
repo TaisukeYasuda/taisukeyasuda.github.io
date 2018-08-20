@@ -60,11 +60,11 @@
       {"name": "Math Studies Analysis I", "number": "21-235", "honors": true},
       {"name": "Math Studies Algebra I", "number": "21-237", "honors": true, "url": "http://www.borisbukh.org/MathStudiesAlgebra1617/"},
       {"name": "Probability Theory", "number": "21-325"},
-      {"name": "Putnam Seminar", "number": "21-295"},
-      {"name": "A Theorist's Toolkit", "number": "15-751", "graduate": true},
-      {"name": "Principles of Functional Programming", "number": "15-150"},
+      {"name": "Putnam Seminar", "number": "21-295", "url": "http://www.math.cmu.edu/~ploh/2016-putnam.shtml"},
+      {"name": "A Theorist's Toolkit", "number": "15-751", "graduate": true, "url": "http://www.cs.cmu.edu/~odonnell/toolkit13/"},
+      {"name": "Principles of Functional Programming", "number": "15-150", "url": "http://www.cs.cmu.edu/~15150/"},
       {"name": "Server-Side Scripting with Node.js", "number": "98-294"},
-      {"name": "Modern Version Control with Git", "number": "98-174"}
+      {"name": "Modern Version Control with Git", "number": "98-174", "url": "https://www.andrew.cmu.edu/course/98-174/"}
     ]
   },
   "sumII16": {
