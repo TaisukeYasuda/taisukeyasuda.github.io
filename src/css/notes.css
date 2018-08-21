@@ -1,0 +1,11 @@
+.problem {
+  border: 2px solid red;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.solution {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}

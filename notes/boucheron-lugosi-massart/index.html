@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78770665-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-78770665-1');
+  </script>
+
+  <!-- Basic page metas -->
+  <meta http-equiv="Content-Type" content="text/html">
+  <meta charset="utf-8">
+  <title>Taisuke Yasuda</title>
+  <meta name="description" content="Taisuke Yasuda's personal website.">
+  <meta name="keywords" content="Taisuke Yasuda">
+  <meta name="author" content="Taisuke Yasuda">
+  <!-- Mobile specific metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Vendor-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script defer src="//use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet"  type="text/css">
+
+  <!-- MathJax -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML,/assets/js/mathjax-config' async></script>
+
+
+  <!-- Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/css/skeleton.css" type="text/css">
+  <link rel="stylesheet" href="/src/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/src/css/notes.css" type="text/css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+
+  <div class="container">
+    <h1>Concentration Inequalities : A Nonasymptotic Theory of Independence</h1>
+    <h2>Stéphane Boucheron, Gábor Lugosi, Pascal Massart</h2>
+    <div>
+      <h3>Basic Inequalities</h3>
+      <div>
+        <h4>2.1 [08/17/2018]</h4>
+        <div class="problem">
+          Let $\bfM Z$ be a median of the square-integrable random variable $Z$ (i.e. $\bfP\{Z\geq\bfM Z\}\geq 1/2$ and $\bfP\{Z\leq\bfM Z\}\geq 1/2$). Show that
+          \[
+            \abs{\bfM Z-\bfE Z}\leq\sqrt{\Var(Z)}
+          \]
+        </div>
+        <h4>Solution</h4>
+        <div class="solution">
+          Recall that $\bfM Z$ minimizes $\bfE\abs{Z-c}$ over $c\in\mathbb R$. Thus,
+          \[
+            \abs{\bfE Z-\bfM Z} = \abs{\bfE(Z-\bfM Z)}\leq \bfE\abs{Z-\bfM Z}\leq \bfE\abs{Z-\bfE Z}\leq \bracks{\bfE\parens{\abs{Z-\bfE Z}^2}}^{1/2} = \sqrt{\Var(Z)}.
+          \]
+        </div>
+      </div>
+
+      <div>
+        <h4>2.2 [08/18/2018]</h4>
+        <div class="problem">
+          Let $X$ be random variable with median $\bfM X$ such that positive constants $a$ and $b$ exist so that for all $t>0$,
+          \[
+            \bfP\braces{\abs{X-\bfM X}>t}\leq ae^{-t^2/b}.
+          \]
+          Show that $\abs{\bfM X-\bfE X}\leq \min\parens{\sqrt{ab},a\sqrt{b\pi}/2}$.
+        </div>
+        <h4>Solution</h4>
+        <div class="solution">
+          The first bound is given by
+          \begin{align*}
+              \abs{\bfE X-\bfM X} &= \sqrt{\parens{\bfE\parens{X-\bfM X}}^2}\leq \sqrt{\bfE\parens{\abs{X-\bfM X}^2}} = \sqrt{\int_0^\infty \bfP\braces{\abs{X-\bfM X}^2>t}~dt} \\
+              &= \sqrt{\int_0^\infty \bfP\braces{\abs{X-\bfM X}>\sqrt t}~dt}\leq \sqrt{\int_0^\infty ae^{-t/b}~dt} = \sqrt{ab}
+          \end{align*}
+          and the second bound is given by
+          \begin{align*}
+              \abs{\bfE X-\bfM X} &= \abs{\bfE(X-\bfM X)}\leq \bfE\abs{X-\bfM X} \\
+              &= \int_0^\infty\bfP\{\abs{X-\bfM X} > t\}~dt\leq \int_0^\infty ae^{-t^2/b}~dt = a\sqrt{b\pi}/2.
+          \end{align*}
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h4>2.3 (Chebyshev-Cantelli Inequality) [08/19/2018]</h4>
+      <div class="problem">
+        Prove the following one-sided improvement of Chebyshev's inequality: for any real-valued random variable $Y$ and $t>0$,
+        \[
+          \bfP\braces{Y-\bfE Y\geq t}\leq\frac{\Var(Y)}{\Var(Y)+t^2}.
+        \]
+      </div>
+      <h4>Solution</h4>
+      <div class="solution">
+        For every $\lambda\in\mathbb R$, we have the bound
+        \[
+            \bfP\braces{Y-\bfE Y\geq t} = \bfP\braces{(Y-\bfE Y+\lambda)^2\geq (\lambda+t)^2}\leq \frac{\Var(Y) + \lambda^2}{(\lambda + t)^2}.
+        \]
+        Then to optimize the RHS with respect to $\lambda$, we find the critical point
+        \[
+            \frac{(\lambda+t)^22\lambda - (\Var(Y)+\lambda^2)2(\lambda+t)}{(\lambda+t)^4} = 0\iff \lambda = \frac{\Var(Y)}{t}
+        \]
+        which gives the upper bound of
+        \[
+            \frac{\Var(Y) + (\Var(Y)/t)^2}{(\Var(Y)/t + t)^2} = \frac{t^2\Var(Y) + \Var(Y)^2}{(\Var(Y) + t^2)^2}
+        \]
+      </div>
+    </div>
+
+    <div>
+      <h4>2.4 (Paley-Zygmund Inequality) [08/20/2018]</h4>
+      <div class="problem">
+        Show that if $Y$ is a nonnegative random variable, then for any $a\in(0,1)$,
+        \[
+          \bfP\braces{Y\geq a\bfE Y}\geq (1-a)^2\frac{(\bfE Y)^2}{\bfE[Y^2]}.
+        \]
+      </div>
+      <h4>Solution</h4>
+      <div class="solution">
+        We have that
+        \[
+            \bfE Y = \bfE\parens{Y\bbone_{\{Y\leq a\bfE Y\}}} + \bfE\parens{Y\bbone_{\{Y> a\bfE Y\}}}\leq a\bfE Y + \sqrt{\bfE Y^2}\sqrt{\bfP(Y>a\bfE Y)}
+        \]
+        so rearranging yields
+        \[
+            \frac{(1-a)\bfE Y}{\sqrt{\bfE Y^2}}\leq \sqrt{\bfP(Y>a\bfE Y)}\iff \bfP(Y>a\bfE Y)\geq (1-a)^2\frac{(\bfE Y)^2}{\bfE Y^2}.
+        \]
+      </div>
+    </div>
+  </div>
+
+  <!-- Preloader -->
+  <script type="text/javascript">
+    //<![CDATA[
+      $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+      })
+    //]]>
+  </script>
+
+</body>
+</html>
