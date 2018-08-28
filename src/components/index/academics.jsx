@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const Academics = () => (
   <section id="academics" className="docs-section">
-    <h2>Academics</h2>
+    <h2 class="section-title">Academics</h2>
     <h3>Education</h3>
     <div className="school">
       <h3>Carnegie Mellon University, 2015 - 2019</h3>

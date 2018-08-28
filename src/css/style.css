@@ -15,7 +15,16 @@ body {
 .school {
   text-align: center; }
 .social-links {
-  text-align: left; }
+  text-align: left;
+  padding-left: 2em;
+  border-left: 2px solid #00ff99; }
+
+.navbar-link:hover {
+  text-decoration: none; }
+
+section {
+  padding: 1em; }
+
 
 footer {
   width: 100%;

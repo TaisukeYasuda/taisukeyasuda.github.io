@@ -8,8 +8,9 @@
     "year": 2018,
     "courses": [
       {"name": "Master's Degree Research", "number": "21-901", "graduate": true},
-      {"name": "Advanced Algorithms", "number": "15-850", "graduate": true, "url": "http://www.cs.cmu.edu/~15850/"},
+      {"name": "Advanced Algorithms", "number": "15-850", "graduate": true, "url": "http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-f18/www/"},
       {"name": "Advances in Coding Theory", "number": "15-859", "graduate": true},
+      {"name": "Constructive Logic", "number": "15-317", "url": "www.cs.cmu.edu/~crary/317-f18/"},
       {"name": "Machine Learning with Large Datasets", "number": "10-605", "graduate": true, "url": "https://sites.google.com/site/scalableml2018f/"},
       {"name": "MCS Looking Forward", "number": "38-430"},
       {"name": "MCS Engage in Service", "number": "38-220"},

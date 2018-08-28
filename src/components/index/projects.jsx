@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const Projects = () => (
   <section id="projects" className="docs-section">
-    <h2>Software Projects</h2>
+    <h2 class="section-title">Software Projects</h2>
     <ul>
       <li>Parallel Sketch (<a href="https://github.com/TaisukeYasuda/parallel-sketch">repo</a>)</li>
       <li><a href="http://staff.usmath.org">United States Mathematics Competition Association Website</a> (<a href="https://github.com/USMCA/database-website">repo</a>)</li>
