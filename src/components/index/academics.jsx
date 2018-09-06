@@ -31,6 +31,16 @@ const Academics = () => (
         </tr>
       </tbody>
     </table>
+
+    <h3>Teaching</h3>
+    <table style={ {width: '100%'} }>
+      <tbody>
+        <tr>
+          <td><a href="http://www.math.cmu.edu/~mradclif/teaching/241F18/">21-241 Linear Algebra</a> (TA)</td>
+          <td>Fall 2018</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 );
 
