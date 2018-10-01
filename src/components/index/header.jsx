@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const clearStyle = { clear: 'both'},
       imgStyle = {
-        borderRadius: '5px',
+        borderRadius: '10px',
         display: 'block',
         marginLeft: 'auto',
         marginRight: 'auto',
@@ -14,15 +14,17 @@ const Header = () => (
     <div className="row">
       <div className="eight columns">
         <h1 className="title">Taisuke Yasuda</h1>
+        <div style={ {padding: '0px 0px 20px 0px'} }>
+          Carnegie Mellon University (2015 - 2019) <br />
+          MS, Mathematics <br />
+          BS, Mathematics and Computer Science
+        </div>
         <div className="social-links">
-          <i className="fas fa-at"></i>&emsp; taisukey@andrew.cmu.edu <br />
+          <i className="fas fa-envelope"></i>&emsp; taisukey@andrew.cmu.edu <br />
           <i className="fas fa-phone"></i>&emsp; (919)259-9967 <br />
-          <i className="fab fa-linkedin"></i>&emsp; <a href="https://www.linkedin.com/in/taisukeyasuda">taisukeyasuda</a> <br />
-          <i className="fab fa-github"></i>&emsp; <a href="https://www.github.com/TaisukeYasuda">taisukeyasuda</a> <br />
-          <i className="fas fa-file-pdf"></i>&emsp; <a href="assets/docs/resume.pdf">resume</a> <br />
         </div>
         <p>
-          Hi! It's a pleasure to have you here. I'm Tai, an undergrad at Carnegie Mellon University studying in the <a href="https://www.math.cmu.edu/undergraduate/honors.html">Honors Program in Mathematics</a> with an <a href="http://www.cs.cmu.edu/undergraduate-programs">Additional Major in Computer Science</a>. For more, check out my site!
+          Hi! I'm Tai, a student at Carnegie Mellon University studying in the <a href="https://www.math.cmu.edu/undergraduate/honors.html">Honors Program in Mathematics</a> with an <a href="http://www.cs.cmu.edu/undergraduate-programs">Additional Major in Computer Science</a>.
         </p>
       </div>
         <div className="four columns">
@@ -31,7 +33,6 @@ const Header = () => (
     </div>
 
     <br style={ clearStyle } />
-    <br />
   </section>
 
 
