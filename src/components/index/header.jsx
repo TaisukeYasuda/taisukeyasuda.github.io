@@ -13,18 +13,18 @@ const Header = () => (
   <section className="header">
     <div className="row">
       <div className="eight columns">
-        <h1 className="title">Taisuke Yasuda</h1>
+        <h1 style={ {fontWeight: 'lighter', fontSize: '3em'} }>Taisuke Yasuda</h1>
         <div style={ {padding: '0px 0px 20px 0px'} }>
-          Carnegie Mellon University (2015 - 2019) <br />
+          <span style={ {fontWeight: 'bold'} }>Carnegie Mellon University</span> (2017 - 2019) <br />
           MS, Mathematics <br />
+          <span style={ {fontWeight: 'bold'} }>Carnegie Mellon University</span> (2015 - 2019) <br />
           BS, Mathematics and Computer Science
         </div>
         <div className="social-links">
-          <i className="fas fa-envelope"></i>&emsp; taisukey@andrew.cmu.edu <br />
-          <i className="fas fa-phone"></i>&emsp; (919)259-9967 <br />
+          <span style={ {fontWeight: 'bold'} }>Contact:</span>&emsp; taisukey@andrew.cmu.edu
         </div>
         <p>
-          Hi! I'm Tai, a student at Carnegie Mellon University studying in the <a href="https://www.math.cmu.edu/undergraduate/honors.html">Honors Program in Mathematics</a> with an <a href="http://www.cs.cmu.edu/undergraduate-programs">Additional Major in Computer Science</a>.
+          I am a student at Carnegie Mellon University studying in the <a href="https://www.math.cmu.edu/undergraduate/honors.html">Honors Program in Mathematics</a> with an <a href="http://www.cs.cmu.edu/undergraduate-programs">Additional Major in Computer Science</a>. My CV is available <a href="docs/cv.pdf">here</a>.
         </p>
       </div>
         <div className="four columns">

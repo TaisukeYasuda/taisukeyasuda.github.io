@@ -1,7 +1,10 @@
 {
   "spring19": {
     "sem": "Spring",
-    "year": 2019
+    "year": 2019,
+    "courses": [
+      {"name": "Master's Degree Research", "number": "21-901", "graduate": true}
+    ]
   },
   "fall18": {
     "sem": "Fall",
