@@ -8,7 +8,11 @@ const Academics = () => (
 
       <ul>
       <li>
-        Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel k-means Clustering <br />
+        The Query Complexity of Mastermind with $\ell_p$ Distances <br />
+        (with Manuel Fernández V and David P. Woodruff)
+      </li>
+      <li>
+        Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering <br />
         (with Manuel Fernández V and David P. Woodruff)
       </li>
       <li>
