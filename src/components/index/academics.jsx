@@ -12,12 +12,13 @@ const Academics = () => (
         (with Manuel Fernández V and David P. Woodruff)
       </li>
       <li>
-        Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering <br />
-        (with Manuel Fernández V and David P. Woodruff)
-      </li>
-      <li>
         Asymptotic Stability of the Faraday Wave Problem <br />
         (with David Altizio, Ian Tice, and Xinyu Wu)
+      </li>
+      <li>
+        Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering <br />
+        (with Manuel Fernández V and David P. Woodruff) <br />
+        <span style={ {fontWeight: 'bold'} }>ICML 2019</span> (to appear)
       </li>
       </ul>
     </div>
