@@ -8,17 +8,22 @@ const Academics = () => (
 
       <ul>
       <li>
-        The Query Complexity of Mastermind with $\ell_p$ Distances <br />
-        (with Manuel Fernández V and David P. Woodruff)
-      </li>
-      <li>
-        Asymptotic Stability of the Faraday Wave Problem <br />
-        (with David Altizio, Ian Tice, and Xinyu Wu)
-      </li>
-      <li>
-        Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering <br />
+        <span style={ {fontStyle: 'italic'} }>The Query Complexity of Mastermind with $\ell_p$ Distances</span> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        <span style={ {fontWeight: 'bold'} }>ICML 2019</span> (to appear)
+        in submission <br />
+      </li>
+      <li>
+        <span style={ {fontStyle: 'italic'} }>The Nonlinear Stability Regime of the Viscous Faraday Wave Problem</span> <br />
+        (with David Altizio, Ian Tice, and Xinyu Wu) <br />
+        in submission <br />
+        Full version on <a href='https://arxiv.org/abs/1905.04747'>arXiv</a> <br />
+        <a href='/docs/ms-thesis/ms-thesis.pdf'>Master's thesis</a> and <a href='/docs/ms-thesis/slides.pdf'>defense slides</a> <br />
+      </li>
+      <li>
+        <span style={ {fontStyle: 'italic'} }>Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering</span> <br />
+        (with Manuel Fernández V and David P. Woodruff) <br />
+        <span style={ {fontWeight: 'bold'} }>ICML 2019</span> (to appear) <br />
+        <a href='/docs/posters/fwy19.pdf'>Poster</a> <br />
       </li>
       </ul>
     </div>
@@ -28,7 +33,7 @@ const Academics = () => (
       <tbody>
         <tr>
           <td>How it's made: lower bounds for randomized algorithms</td>
-          <td>Summer Math Seminar, July 27, 2018</td>
+          <td>CMU Summer Math Seminar, July 27, 2018</td>
         </tr>
       </tbody>
     </table>

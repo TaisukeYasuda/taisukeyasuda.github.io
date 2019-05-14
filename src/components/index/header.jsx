@@ -24,7 +24,7 @@ const Header = () => (
           <span style={ {fontWeight: 'bold'} }>Contact:</span>&emsp; taisukey@andrew.cmu.edu
         </div>
         <p>
-          I am a student at Carnegie Mellon University studying in the <a href="https://www.math.cmu.edu/undergraduate/honors.html">Honors Program in Mathematics</a> with an <a href="http://www.cs.cmu.edu/undergraduate-programs">Additional Major in Computer Science</a>. My CV is available <a href="docs/cv.pdf">here</a>.
+          I am a student at Carnegie Mellon University studying in the Honors Program in Mathematics with an Additional Major in Computer Science. My CV is available <a href="/docs/cv.pdf">here</a>.
         </p>
       </div>
         <div className="four columns">
