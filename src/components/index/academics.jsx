@@ -28,16 +28,6 @@ const Academics = () => (
       </ul>
     </div>
 
-    <h3>Talks and Presentations</h3>
-    <table style={ {width: '100%'} }>
-      <tbody>
-        <tr>
-          <td>How it's made: lower bounds for randomized algorithms</td>
-          <td>CMU Summer Math Seminar, July 27, 2018</td>
-        </tr>
-      </tbody>
-    </table>
-
     <h3>Teaching</h3>
     <table style={ {width: '100%'} }>
       <tbody>
