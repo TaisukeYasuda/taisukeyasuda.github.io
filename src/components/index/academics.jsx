@@ -23,6 +23,7 @@ const Academics = () => (
         <span style={ {fontStyle: 'italic'} }>Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering</span> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
         <span style={ {fontWeight: 'bold'} }>ICML 2019</span> (to appear) <br />
+        Full version on <a href='https://arxiv.org/abs/1905.06394'>arXiv</a> <br />
         <a href='/docs/posters/fwy19.pdf'>Poster</a> <br />
       </li>
       </ul>
