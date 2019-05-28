@@ -24,6 +24,7 @@ const Academics = () => (
         (with Manuel Fernández V and David P. Woodruff) <br />
         <span style={ {fontWeight: 'bold'} }>ICML 2019</span> (to appear) <br />
         Full version [<a href='https://arxiv.org/abs/1905.06394'>arXiv</a>] <br />
+        Conference version [<a href='http://proceedings.mlr.press/v97/yasuda19a.html'>proceedings</a>] <br />
         <a href='/docs/posters/fwy19.pdf'>Poster</a> <br />
       </li>
       </ul>
