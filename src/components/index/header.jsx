@@ -21,7 +21,7 @@ const Header = () => (
           BS, Mathematics and Computer Science
         </div>
         <div className="social-links">
-          <span style={ {fontWeight: 'bold'} }>Contact:</span>&emsp; taisukey@andrew.cmu.edu
+          <span style={ {fontWeight: 'bold'} }>Contact:</span>&emsp; yasuda.taisuke1@gmail.com
         </div>
         <p>
           I am a Junior Quantitative Trader at <a href='https://akunacapital.com'>Akuna Capital</a>. Previously, I studied Math and Computer Science at Carnegie Mellon University. My CV is available <a href="/docs/cv.pdf">here</a>.
