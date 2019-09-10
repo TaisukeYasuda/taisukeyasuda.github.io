@@ -8,6 +8,11 @@ const Academics = () => (
 
       <ul>
       <li>
+        <span style={ {fontStyle: 'italic'} }>Graph Spanners in the Message-Passing Model</span> <br />
+        (with Manuel Fernández V and David P. Woodruff) <br />
+        in submission <br /> <br />
+      </li>
+      <li>
         <span style={ {fontStyle: 'italic'} }>The Query Complexity of Mastermind with $\ell_p$ Distances</span> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
         <span style={ {fontWeight: 'bold'} }>APPROX 2019</span> (to appear) <br /> <br />
@@ -21,7 +26,7 @@ const Academics = () => (
       <li>
         <span style={ {fontStyle: 'italic'} }>Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering</span> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        <span style={ {fontWeight: 'bold'} }>ICML 2019</span> <br />
+        <span style={ {fontWeight: 'bold'} }>ICML 2019</span>, selected for a long talk <br />
         [<a href='https://arxiv.org/abs/1905.06394'>arXiv</a>] [<a href='http://proceedings.mlr.press/v97/yasuda19a.html'>proceedings</a>] [<a href='/docs/posters/fwy19.pdf'>poster</a>] [<a href='/docs/slides/fwy19.pdf'>slides</a>] <br />
       </li>
       </ul>
