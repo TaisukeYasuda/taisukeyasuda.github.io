@@ -15,7 +15,8 @@ const Academics = () => (
       <li>
         <span style={ {fontStyle: 'italic'} }>The Query Complexity of Mastermind with $\ell_p$ Distances</span> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        <span style={ {fontWeight: 'bold'} }>APPROX 2019</span> (to appear) <br /> <br />
+        <span style={ {fontWeight: 'bold'} }>APPROX 2019</span> <br />
+        [<a href='http://drops.dagstuhl.de/opus/volltexte/2019/11216/'>proceedings</a>] <br /> <br />
       </li>
       <li>
         <span style={ {fontStyle: 'italic'} }>The Nonlinear Stability Regime of the Viscous Faraday Wave Problem</span> <br />
