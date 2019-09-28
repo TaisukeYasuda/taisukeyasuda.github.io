@@ -25,7 +25,7 @@ const Academics = () => (
       <li>
         <span style={ {fontStyle: 'italic'} }>Graph Spanners in the Message-Passing Model</span> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        in submission <br /> <br />
+        in submission <br />
       </li>
       </ul>
 
@@ -35,7 +35,7 @@ const Academics = () => (
         <span style={ {fontStyle: 'italic'} }>The Nonlinear Stability Regime of the Viscous Faraday Wave Problem</span> <br />
         (with David Altizio, Ian Tice, and Xinyu Wu) <br />
         <span style={ {fontWeight: 'bold'} }>Quart. Appl. Math.</span> (to appear) <br />
-        [<a href='https://arxiv.org/abs/1905.04747'>arXiv</a>] [<a href='/docs/ms-thesis/ms-thesis.pdf'>master's thesis</a>] [<a href='/docs/ms-thesis/slides.pdf'>defense slides</a>] <br /> <br />
+        [<a href='https://arxiv.org/abs/1905.04747'>arXiv</a>] [<a href='/docs/ms-thesis/ms-thesis.pdf'>master's thesis</a>] [<a href='/docs/ms-thesis/slides.pdf'>defense slides</a>] <br />
       </li>
       </ul>
 
