@@ -1,5 +1,11 @@
 import * as React from 'react';
 
+const SectionHeader = ({ section }) => (
+  <h4 style={ {width: '100%', borderBottom: '1px solid #eee', lineHeight: '0.1em', margin: '10px 0 20px' } }>
+    <span style={ {background: '#fff', padding: '0 10px'} }>{section}</span>
+  </h4>
+)
+
 const Academics = () => (
   <section id="academics" className="docs-section">
     <h3>Research</h3>
@@ -12,17 +18,25 @@ const Academics = () => (
         (with Manuel Fernández V and David P. Woodruff) <br />
         in submission <br /> <br />
       </li>
+      </ul>
+
+      <SectionHeader section={2020} />
+      <ul>
+      <li>
+        <span style={ {fontStyle: 'italic'} }>The Nonlinear Stability Regime of the Viscous Faraday Wave Problem</span> <br />
+        (with David Altizio, Ian Tice, and Xinyu Wu) <br />
+        <span style={ {fontWeight: 'bold'} }>Quart. Appl. Math.</span> (to appear) <br />
+        [<a href='https://arxiv.org/abs/1905.04747'>arXiv</a>] [<a href='/docs/ms-thesis/ms-thesis.pdf'>master's thesis</a>] [<a href='/docs/ms-thesis/slides.pdf'>defense slides</a>] <br /> <br />
+      </li>
+      </ul>
+
+      <SectionHeader section={2019} />
+      <ul>
       <li>
         <span style={ {fontStyle: 'italic'} }>The Query Complexity of Mastermind with $\ell_p$ Distances</span> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
         <span style={ {fontWeight: 'bold'} }>APPROX 2019</span> <br />
         [<a href='https://arxiv.org/abs/1909.10668'>arXiv</a>] [<a href='http://drops.dagstuhl.de/opus/volltexte/2019/11216/'>proceedings</a>] <br /> <br />
-      </li>
-      <li>
-        <span style={ {fontStyle: 'italic'} }>The Nonlinear Stability Regime of the Viscous Faraday Wave Problem</span> <br />
-        (with David Altizio, Ian Tice, and Xinyu Wu) <br />
-        in submission <br />
-        [<a href='https://arxiv.org/abs/1905.04747'>arXiv</a>] [<a href='/docs/ms-thesis/ms-thesis.pdf'>master's thesis</a>] [<a href='/docs/ms-thesis/slides.pdf'>defense slides</a>] <br /> <br />
       </li>
       <li>
         <span style={ {fontStyle: 'italic'} }>Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering</span> <br />
