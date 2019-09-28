@@ -1,7 +1,16 @@
 import * as React from 'react';
 
+const sectionHeaderStyle = {
+  width: '100%',
+  textAlign: 'right',
+  borderBottom: '1px solid #eee',
+  lineHeight: '0.1em',
+  margin: '10px 0 20px',
+  color: '#999'
+}
+
 const SectionHeader = ({ section }) => (
-  <h4 style={ {width: '100%', borderBottom: '1px solid #eee', lineHeight: '0.1em', margin: '10px 0 20px' } }>
+  <h4 style={ sectionHeaderStyle }>
     <span style={ {background: '#fff', padding: '0 10px'} }>{section}</span>
   </h4>
 )
