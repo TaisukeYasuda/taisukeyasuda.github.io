@@ -21,16 +21,13 @@ const Academics = () => (
     <div className="research">
       I am broadly interested in theoretical computer science, especially in provable algorithms and lower bounds for learning problems.
 
+      <SectionHeader section={2020} />
       <ul>
       <li>
         <span style={ {fontStyle: 'italic'} }>Graph Spanners in the Message-Passing Model</span> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        in submission <br />
+        <span style={ {fontWeight: 'bold'} }>ITCS 2020</span> (to appear) <br /><br />
       </li>
-      </ul>
-
-      <SectionHeader section={2020} />
-      <ul>
       <li>
         <span style={ {fontStyle: 'italic'} }>The Nonlinear Stability Regime of the Viscous Faraday Wave Problem</span> <br />
         (with David Altizio, Ian Tice, and Xinyu Wu) <br />
