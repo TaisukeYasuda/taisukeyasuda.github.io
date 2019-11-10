@@ -15,6 +15,11 @@ const SectionHeader = ({ section }) => (
   </h4>
 )
 
+const PubVenue = ({ name }) => (<span style={ {fontWeight: 'bold'} }>{name}</span>)
+const PubTitle = ({ title, bib }) => (
+  <span><span style={ {fontStyle: 'italic'} }>{title}</span> { bib == undefined ? '' : <span>[<a href={bib}>bib</a>]</span> }</span>
+)
+
 const Academics = () => (
   <section id="academics" className="docs-section">
     <h3>Research</h3>
@@ -24,14 +29,14 @@ const Academics = () => (
       <SectionHeader section={2020} />
       <ul>
       <li>
-        <span style={ {fontStyle: 'italic'} }>Graph Spanners in the Message-Passing Model</span> <br />
+        <PubTitle title='Graph Spanners in the Message-Passing Model' /> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        <span style={ {fontWeight: 'bold'} }>ITCS 2020</span> (to appear) <br /><br />
+        <PubVenue name='ITCS 2020' /> (to appear) <br /><br />
       </li>
       <li>
-        <span style={ {fontStyle: 'italic'} }>The Nonlinear Stability Regime of the Viscous Faraday Wave Problem</span> <br />
+        <PubTitle title='The Nonlinear Stability Regime of the Viscous Faraday Wave Problem' /> <br />
         (with David Altizio, Ian Tice, and Xinyu Wu) <br />
-        <span style={ {fontWeight: 'bold'} }>Quart. Appl. Math.</span> (to appear) <br />
+        <PubVenue name='Quart. Appl. Math.' /> (to appear) <br />
         [<a href='https://arxiv.org/abs/1905.04747'>arXiv</a>] [<a href='/docs/ms-thesis/ms-thesis.pdf'>master's thesis</a>] [<a href='/docs/ms-thesis/slides.pdf'>defense slides</a>] <br />
       </li>
       </ul>
@@ -39,15 +44,15 @@ const Academics = () => (
       <SectionHeader section={2019} />
       <ul>
       <li>
-        <span style={ {fontStyle: 'italic'} }>The Query Complexity of Mastermind with $\ell_p$ Distances</span> <br />
+        <PubTitle title='The Query Complexity of Mastermind with $\ell_p$ Distances' bib='https://dblp.org/rec/bibtex/conf/approx/FernandezW019' /> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        <span style={ {fontWeight: 'bold'} }>APPROX 2019</span> <br />
+        <PubVenue name='APPROX 2019' /> <br />
         [<a href='https://arxiv.org/abs/1909.10668'>arXiv</a>] [<a href='http://drops.dagstuhl.de/opus/volltexte/2019/11216/'>proceedings</a>] <br /> <br />
       </li>
       <li>
-        <span style={ {fontStyle: 'italic'} }>Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering</span> <br />
+        <span style={ {fontStyle: 'italic'} }>Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering</span> [<a href='https://dblp.org/rec/bibtex/conf/icml/0002WF19'>bib</a>] <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        <span style={ {fontWeight: 'bold'} }>ICML 2019</span>, selected for a long talk <br />
+        <PubVenue name='ICML 2019' />, selected for a long talk <br />
         [<a href='https://arxiv.org/abs/1905.06394'>arXiv</a>] [<a href='http://proceedings.mlr.press/v97/yasuda19a.html'>proceedings</a>] [<a href='/docs/posters/fwy19.pdf'>poster</a>] [<a href='/docs/slides/fwy19.pdf'>slides</a>] <br />
       </li>
       </ul>
