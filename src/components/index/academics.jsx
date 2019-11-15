@@ -31,7 +31,8 @@ const Academics = () => (
       <li>
         <PubTitle title='Graph Spanners in the Message-Passing Model' /> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        <PubVenue name='ITCS 2020' /> (to appear) <br /><br />
+        <PubVenue name='ITCS 2020' /> (to appear) <br />
+        [<a href='https://arxiv.org/abs/1911.05991'>arXiv</a>]<br /><br />
       </li>
       <li>
         <PubTitle title='The Nonlinear Stability Regime of the Viscous Faraday Wave Problem' /> <br />
