@@ -32,23 +32,23 @@ const Academics = () => (
         <PubTitle title='Graph Spanners in the Message-Passing Model' /> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
         <PubVenue name='ITCS 2020' /> (to appear) <br />
-        [<a href='https://arxiv.org/abs/1911.05991'>arXiv</a>]<br /><br />
-      </li>
-      <li>
-        <PubTitle title='The Nonlinear Stability Regime of the Viscous Faraday Wave Problem' /> <br />
-        (with David Altizio, Ian Tice, and Xinyu Wu) <br />
-        <PubVenue name='Quart. Appl. Math.' /> (to appear) <br />
-        [<a href='https://arxiv.org/abs/1905.04747'>arXiv</a>] [<a href='/docs/ms-thesis/ms-thesis.pdf'>master's thesis</a>] [<a href='/docs/ms-thesis/slides.pdf'>defense slides</a>] <br />
+        [<a href='https://arxiv.org/abs/1911.05991'>arXiv</a>]<br />
       </li>
       </ul>
 
       <SectionHeader section={2019} />
       <ul>
       <li>
+        <PubTitle title='The Nonlinear Stability Regime of the Viscous Faraday Wave Problem' /> <br />
+        (with David Altizio, Ian Tice, and Xinyu Wu) <br />
+        <PubVenue name='Quart. Appl. Math.' /> <br />
+        [<a href='https://arxiv.org/abs/1905.04747'>arXiv</a>] [<a href='https://doi.org/10.1090/qam/1562'>journal</a>] [<a href='/docs/ms-thesis/ms-thesis.pdf'>master's thesis</a>] [<a href='/docs/ms-thesis/slides.pdf'>defense slides</a>] <br /><br />
+      </li>
+      <li>
         <PubTitle title='The Query Complexity of Mastermind with $\ell_p$ Distances' bib='https://dblp.org/rec/bibtex/conf/approx/FernandezW019' /> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
         <PubVenue name='APPROX 2019' /> <br />
-        [<a href='https://arxiv.org/abs/1909.10668'>arXiv</a>] [<a href='http://drops.dagstuhl.de/opus/volltexte/2019/11216/'>proceedings</a>] <br /> <br />
+        [<a href='https://arxiv.org/abs/1909.10668'>arXiv</a>] [<a href='http://dx.doi.org/10.4230/LIPIcs.APPROX-RANDOM.2019.1'>proceedings</a>] <br /> <br />
       </li>
       <li>
         <span style={ {fontStyle: 'italic'} }>Tight Kernel Query Complexity of Kernel Ridge Regression and Kernel $k$-means Clustering</span> [<a href='https://dblp.org/rec/bibtex/conf/icml/0002WF19'>bib</a>] <br />
