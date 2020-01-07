@@ -29,10 +29,10 @@ const Academics = () => (
       <SectionHeader section={2020} />
       <ul>
       <li>
-        <PubTitle title='Graph Spanners in the Message-Passing Model' /> <br />
+        <PubTitle title='Graph Spanners in the Message-Passing Model' bib='https://dblp.org/rec/bibtex/conf/innovations/FernandezW020' /> <br />
         (with Manuel Fernández V and David P. Woodruff) <br />
-        <PubVenue name='ITCS 2020' /> (to appear) <br />
-        [<a href='https://arxiv.org/abs/1911.05991'>arXiv</a>]<br />
+        <PubVenue name='ITCS 2020' /> <br />
+        [<a href='https://arxiv.org/abs/1911.05991'>arXiv</a>] [<a href='https://doi.org/10.4230/LIPIcs.ITCS.2020.77'>proceedings</a>]<br />
       </li>
       </ul>
 
