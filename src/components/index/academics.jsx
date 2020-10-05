@@ -24,8 +24,6 @@ const Academics = () => (
   <section id="academics" className="docs-section">
     <h3>Research</h3>
     <div className="research">
-      I am broadly interested in theoretical computer science, especially in provable algorithms and lower bounds for learning problems.
-
       <SectionHeader section={2020} />
       <ul>
       <li>

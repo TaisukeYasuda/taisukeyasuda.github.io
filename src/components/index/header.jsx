@@ -15,17 +15,14 @@ const Header = () => (
     <div className="row">
       <div className="eight columns">
         <h1 style={ {fontWeight: 'lighter', fontSize: '3em'} }>Taisuke Yasuda</h1>
-        <div style={ {padding: '0px 0px 20px 0px'} }>
-          <span style={ bold }>Carnegie Mellon University</span> (2017 - 2019) <br />
-          MS, Mathematics <br />
-          <span style={ bold }>Carnegie Mellon University</span> (2015 - 2019) <br />
-          BS, Mathematics and Computer Science
-        </div>
         <div className="social-links">
-          <span style={ bold }>Contact:</span>&emsp; yasuda.taisuke1@gmail.com
+          <span style={ bold }>Contact:</span>&emsp; taisukey@cs.cmu.edu
         </div>
         <p>
-          I am a Junior Quantitative Trader at <a href='https://akunacapital.com'>Akuna Capital</a>. Previously, I studied Math and Computer Science at Carnegie Mellon University. My CV is available <a href="/docs/cv.pdf">here</a>.
+          I am a first year PhD student in the <a href='http://theory.cs.cmu.edu/'>Theory Group</a> in the Computer Science Department at Carnegie Mellon University. I am extremely fortunate to be advised by <a href='https://www.cs.cmu.edu/~dwoodruf/'>David Woodruff</a>. I am broadly interested in theoretical computer science, especially in algorithms and complexity for problems from data science and machine learning.
+        </p>
+        <p>
+          Previously, I was a Junior Quantitative Trader at <a href='https://akunacapital.com'>Akuna Capital</a>. My CV is available <a href="/docs/cv.pdf">here</a>.
         </p>
       </div>
         <div className="four columns">
