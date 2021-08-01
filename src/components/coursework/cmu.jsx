@@ -28,6 +28,10 @@ const CMU = () => (
     <table>
       <tbody style={ { verticalAlign: 'top' } }>
         <tr>
+          <td><Semester sem={ cmu.spring21 } /></td>
+          <td><Semester sem={ cmu.fall20 } /></td>
+        </tr>
+        <tr>
           <td><Semester sem={ cmu.spring19 } /></td>
           <td><Semester sem={ cmu.fall18 } /></td>
         </tr>

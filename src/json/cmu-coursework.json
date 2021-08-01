@@ -1,4 +1,21 @@
 {
+  "spring21": {
+    "sem": "Fall",
+    "year": 2020,
+    "courses": [
+      {"name": "Graduate Artificial Intelligence", "number": "15-780", "graduate": true, "url": "http://www.cs.cmu.edu/~15780/"}
+    ]
+  },
+  "fall20": {
+    "sem": "Fall",
+    "year": 2020,
+    "courses": [
+      {"name": "Proofs vs Algorithms: The Sum-of-Squares Method", "number": "15-859", "graduate": true, "url": "https://www.cs.cmu.edu/~praveshk/sosseminar/sosseminar.html"},
+      {"name": "Types and Programming Languages", "number": "15-814", "graduate": true, "url": "https://www.cs.cmu.edu/~fp/courses/15814-f20/index.html"},
+      {"name": "Computer Architecture", "number": "15-740", "graduate": true},
+      {"name": "Convex Optimization", "number": "10-725", "graduate": true, "url": "http://www.andrew.cmu.edu/user/yuanzhil/cov2.html"}
+    ]
+  },
   "spring19": {
     "sem": "Spring",
     "year": 2019,
@@ -13,7 +30,7 @@
       {"name": "Master's Degree Research", "number": "21-901", "graduate": true},
       {"name": "Advanced Algorithms", "number": "15-850", "graduate": true, "url": "http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-f18/www/"},
       {"name": "Advances in Coding Theory", "number": "15-859", "graduate": true, "url": "http://www.cs.cmu.edu/~venkatg/teaching/au18-coding-theory/"},
-      {"name": "Constructive Logic", "number": "15-317", "url": "www.cs.cmu.edu/~crary/317-f18/"},
+      {"name": "Constructive Logic", "number": "15-317", "url": "http://www.cs.cmu.edu/~crary/317-f18/"},
       {"name": "Machine Learning with Large Datasets", "number": "10-605", "graduate": true, "url": "https://sites.google.com/site/scalableml2018f/"},
       {"name": "MCS Looking Forward", "number": "38-430"},
       {"name": "MCS Engage in Service", "number": "38-220"},
