@@ -1,7 +1,7 @@
 {
   "spring21": {
-    "sem": "Fall",
-    "year": 2020,
+    "sem": "Spring",
+    "year": 2021,
     "courses": [
       {"name": "Graduate Artificial Intelligence", "number": "15-780", "graduate": true, "url": "http://www.cs.cmu.edu/~15780/"}
     ]
