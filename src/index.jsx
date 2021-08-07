@@ -14,6 +14,7 @@ const App = () => (
   <div className="container">
     <Components.Header />
     <Components.Academics />
+    <Components.Personal />
     <Components.Footer />
   </div>
 );
