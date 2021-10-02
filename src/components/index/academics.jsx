@@ -27,19 +27,28 @@ const Academics = () => (
   <section id="academics" className="docs-section">
     <h3>Research</h3>
     <div className="research">
-      <SectionHeader section={'Preprints'} />
+      {/*<SectionHeader section={'Preprints'} />
+      <ul>
+      <li>
+        <PubTitle title='' /> <br />
+        <br />
+        <PubInSubmission /> <br />
+      </li>
+      </ul>*/}
+      
+      <SectionHeader section={2022} />
       <ul>
       <li>
         <PubTitle title='Low Rank Approximation with Sparse Factors' /> <br />
         (with David P. Woodruff) <br />
-        <PubVenue name='Preprint' /> <br />
+        <PubVenue name='SODA 2022' /> <br />
       </li>
       </ul>
 
       <SectionHeader section={2021} />
       <ul>
       <li>
-        <PubTitle title='Exponentially Improved Dimensionality Reduction for $\ell_1$: Subspace Embeddings and Independence Testing' /> <br />
+        <PubTitle title='Exponentially Improved Dimensionality Reduction for $\ell_1$: Subspace Embeddings and Independence Testing' bib='https://dblp.org/rec/conf/colt/LiW021.html?view=bibtex' /> <br />
         (with Yi Li and David P. Woodruff) <br />
         <PubVenue name='COLT 2021' /> <br />
         [<a href='https://arxiv.org/abs/2104.12946'>arXiv</a>] [<a href='http://proceedings.mlr.press/v134/li21c.html'>proceedings</a>] [<a href='/docs/posters/lwy21.pdf'>poster</a>] [<a href='https://www.youtube.com/watch?v=c7TrpsmxoMY'>long talk @ CMU</a>, <a href='/docs/slides/lwy21.pdf'>slides</a>] [<a href='http://www.learningtheory.org/colt2021/virtual/poster_1322.html'>talk @ COLT</a>, <a href='/docs/slides/lwy21_colt.pdf'>slides</a>] <br />
@@ -83,7 +92,7 @@ const Academics = () => (
     <table style={ {width: '100%'} }>
       <tbody>
       <tr>
-          <td><a href="">15-859 Algorithms for Big Data</a> (TA)</td>
+          <td><a href="http://www.cs.cmu.edu/~dwoodruf/teaching/15859-fall21/">15-859 Algorithms for Big Data</a> (TA)</td>
           <td>Fall 2021</td>
         </tr>
         <tr>
