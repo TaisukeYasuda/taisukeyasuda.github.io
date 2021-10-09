@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Make proofs easier to see with frames.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,decorations.pathmorphing}
+
+% *********** framed proof ************
+
+% thanks to this: https://latex.org/forum/viewtopic.php?t=22592
+\usepackage[framemethod=tikz]{mdframed}
+% new mdframed style that places the edges at the corners:
+\newcommand\proofcaplength{1em}
+\mdfdefinestyle{proof}{
+  skipabove         = .5\baselineskip ,
+  skipbelow         = .5\baselineskip ,
+  leftmargin        = 0pt ,
+  rightmargin       = 0pt ,
+  innermargin       = 0pt ,
+  innertopmargin    = .5em ,
+  innerleftmargin   = .5em ,
+  innerrightmargin  = 0pt ,
+  innerbottommargin = .5em ,
+  hidealllines      = true ,
+  singleextra       = {
+    \draw (O) -- ++(0,\proofcaplength) (O) -- ++(\proofcaplength,0) ;
+    \draw (P-|O) -- ++(0,-\proofcaplength) (P-|O) -- ++(\proofcaplength,0) ;
+  },
+  firstextra        = {
+    \draw (P-|O) -- ++(0,-.675em) (P-|O) -- ++(.675em,0) ;
+  },
+  secondextra       = {
+    \draw (O) -- ++(0,.675em) (O) -- ++(.675em,0) ;
+  },
+}
+% put the new mdframed style around the proof environment:
+\surroundwithmdframed[style=proof]{proof}
+
+\mdfdefinestyle{thm}{
+    linewidth=1pt,
+    linecolor=black,
+    bottomline=false,topline=false,rightline=false,
+    innerrightmargin=5pt,innertopmargin=5pt,innerbottommargin=5pt,
+    innerleftmargin=1em,% Distance between vertical rule & proof content
+    skipabove=.5\baselineskip
+}
+
+% \surroundwithmdframed[style=thm]{thm}
+% \surroundwithmdframed[style=thm]{lem}
+% \surroundwithmdframed[style=thm]{cor}
+
+% use this for figures inside proofs: https://tex.stackexchange.com/questions/232289/mdframed-box-containing-text-captioned-tables-and-figures
+\usepackage{caption, subcaption}
+
+\newenvironment{prooffig}{
+    \vspace{1em}
+}{
+    \par
+    \vspace{1em}
+}
+
+% Example usage:
+% \begin{prooffig}
+%     \centering
+%     \begin{tikzpicture}
+%         ...
+%     \end{tikzpicture}
+%     \captionof{figure}{My caption.}
+% \end{prooffig}
+
+% ****************************************

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78770665-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-78770665-1');
+  </script>
+
+  <!-- Basic page metas -->
+  <meta http-equiv="Content-Type" content="text/html">
+  <meta charset="utf-8">
+  <title>Utilities</title>
+  <meta name="author" content="Taisuke Yasuda">
+  <!-- Mobile specific metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Vendor-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script defer src="//use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet"  type="text/css">
+
+  <!-- Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      overflow: hidden; }
+    </style>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+
+  <h2>LaTeX Macros</h2>
+    <ul>
+        <li>
+            <a href="https://raw.githubusercontent.com/TaisukeYasuda/taisukeyasuda.github.io/master/utils/macros.sty">macros.sty</a>: Lifetime sty file
+        </li>
+        <li>
+            <a href="https://raw.githubusercontent.com/TaisukeYasuda/taisukeyasuda.github.io/master/utils/benign_macros.sty">benign_macros.sty</a>: Subset of macros that are unlikely to mess with conference sty files
+        </li>
+        <li>
+            <a href="https://raw.githubusercontent.com/TaisukeYasuda/taisukeyasuda.github.io/master/utils/framed_proofs.sty">framed_proofs.sty</a>: Fancy frames around proof environments
+        </li>
+    </ul>
+
+    <h2>Python Utils</h2>
+    <ul>
+        <li>
+            <a href="https://raw.githubusercontent.com/TaisukeYasuda/taisukeyasuda.github.io/master/utils/rename_thms.py">rename_thms.py</a>: Easily rename theorem enviornments for conference submissions
+        </li>
+        <li>
+            <a href="https://raw.githubusercontent.com/TaisukeYasuda/taisukeyasuda.github.io/master/utils/bf_tex_cmds.py">bf_tex_cmds.py</a>: Generate bf shortcuts for tex
+        </li>
+    </ul>
+  
+
+  <!-- Preloader -->
+  <script type="text/javascript">
+    //<![CDATA[
+      $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+      })
+    //]]>
+  </script>
+
+</body>
+</html>
