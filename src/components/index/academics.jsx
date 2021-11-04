@@ -16,7 +16,7 @@ const SectionHeader = ({ section }) => (
 )
 
 const PubVenue = ({ name }) => (<span style={ {fontWeight: 'bold'} }>{name}</span>)
-const PubInSubmission = () => (<span>In submission</span>)
+const PubInSubmission = () => (<span style={ {fontWeight: 'bold'} }>In submission</span>)
 const PubTitle = ({ title, bib }) => (
   <span><span style={ {fontSize: '17px'} }>{title}</span> { bib == undefined ? '' : <span>[<a href={bib}>bib</a>]</span> }</span>
 )
@@ -27,21 +27,22 @@ const Academics = () => (
   <section id="academics" className="docs-section">
     <h3>Research</h3>
     <div className="research">
-      {/*<SectionHeader section={'Preprints'} />
+      <SectionHeader section={'Preprints'} />
       <ul>
       <li>
-        <PubTitle title='' /> <br />
-        <br />
+        <PubTitle title='Active Sampling for Linear Regression Beyond the $\ell_2$ Norm' /> <br />
+        (with Cameron Musco, Christopher Musco, and David P. Woodruff) <br />
         <PubInSubmission /> <br />
       </li>
-      </ul>*/}
+      </ul>
       
       <SectionHeader section={2022} />
       <ul>
       <li>
-        <PubTitle title='Low Rank Approximation with Sparse Factors' /> <br />
+        <PubTitle title='Improved Algorithms for Low Rank Approximation from Sparsity' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='SODA 2022' /> <br />
+        [<a href='https://arxiv.org/abs/2111.00668'>arXiv</a>]
       </li>
       </ul>
 
