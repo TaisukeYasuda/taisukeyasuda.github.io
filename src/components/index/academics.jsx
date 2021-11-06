@@ -9,6 +9,10 @@ const sectionHeaderStyle = {
   color: '#999'
 }
 
+const Pitch = ({ pitch }) => (
+  <span style={ {color: "green"} }>"{pitch}"</span>
+)
+
 const SectionHeader = ({ section }) => (
   <h4 style={ sectionHeaderStyle }>
     <span style={ {background: '#fff', padding: '0 10px'} }>{section}</span>
@@ -42,7 +46,9 @@ const Academics = () => (
         <PubTitle title='Improved Algorithms for Low Rank Approximation from Sparsity' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='SODA 2022' /> <br />
-        [<a href='https://arxiv.org/abs/2111.00668'>arXiv</a>]
+        [<a href='https://arxiv.org/abs/2111.00668'>arXiv</a>] <br />
+        <br />
+        <Pitch pitch={String.raw`If top $k$ singular vectors are sparse, then low rank approximation is $\frac{\nnz(A)}{\sqrt\eps}$ time instead of $\frac{\nnz(A)}{\sqrt\eps}k$.`} />
       </li>
       </ul>
 
@@ -53,6 +59,8 @@ const Academics = () => (
         (with Yi Li and David P. Woodruff) <br />
         <PubVenue name='COLT 2021' /> <br />
         [<a href='https://arxiv.org/abs/2104.12946'>arXiv</a>] [<a href='http://proceedings.mlr.press/v134/li21c.html'>proceedings</a>] [<a href='/docs/posters/lwy21.pdf'>poster</a>] [<a href='https://www.youtube.com/watch?v=c7TrpsmxoMY'>long talk @ CMU</a>, <a href='/docs/slides/lwy21.pdf'>slides</a>] [<a href='http://www.learningtheory.org/colt2021/virtual/poster_1322.html'>talk @ COLT</a>, <a href='/docs/slides/lwy21_colt.pdf'>slides</a>] <br />
+        <br />
+        <Pitch pitch={String.raw`Improving oblivious linear embeddings of $d$-dim subspaces of $\ell_1^n$ into $\ell_1^r$, from $r = 2^{2^d}$ to $r = 2^d$.`} />
       </li>
       </ul>
 
@@ -85,6 +93,9 @@ const Academics = () => (
         (with Manuel Fernández V and David P. Woodruff) <br />
         <PubVenue name='ICML 2019' />, selected for a long talk <br />
         [<a href='https://arxiv.org/abs/1905.06394'>arXiv</a>] [<a href='http://proceedings.mlr.press/v97/yasuda19a.html'>proceedings</a>] [<a href='/docs/posters/fwy19.pdf'>poster</a>] [<a href='https://slideslive.com/38917909/optimization-and-graphical-models?t=0'>talk @ ICML</a>, <a href='/docs/slides/fwy19.pdf'>slides</a>] <br />
+        <br />
+        <Pitch pitch="Optimal lower bounds on # of kernel evaluations for kernel ridge regression and $k$-means clustering." />
+        <br /><br />
       </li>
       </ul>
     </div>
