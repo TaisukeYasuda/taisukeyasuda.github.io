@@ -27,6 +27,7 @@ const Header = () => (
         <p>
         <a href='https://scholar.google.com/citations?user=c62WqiEAAAAJ&hl=en&sortby=pubdate'><i class="ai ai-google-scholar-square ai-2x"></i></a> &emsp;
         <a href='https://dblp.org/pid/177/9741-2.html'><i class="ai ai-dblp ai-2x"></i></a> &emsp;
+        <a href='https://arxiv.org/a/yasuda_t_2.html'><i class="ai ai-arxiv ai-2x"></i></a> &emsp;
         <a href='/docs/cv.pdf'><i class="ai ai-cv-square ai-2x"></i></a> 
         </p>
       </div>

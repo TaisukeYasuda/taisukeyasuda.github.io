@@ -37,6 +37,9 @@ const Academics = () => (
         <PubTitle title='Active Sampling for Linear Regression Beyond the $\ell_2$ Norm' /> <br />
         (with Cameron Musco, Christopher Musco, and David P. Woodruff) <br />
         <PubInSubmission /> <br />
+        [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>]<br />
+        <br />
+        <Pitch pitch="Optimal active $\ell_p$ regression and sensitivity bounds for $M$-estimators beyond Löwner-John ellipsoids." />
       </li>
       </ul>
       
