@@ -39,7 +39,7 @@ const Academics = () => (
         <PubInSubmission /> <br />
         [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>]<br />
         <br />
-        <Pitch pitch="Optimal active $\ell_p$ regression and sensitivity bounds for $M$-estimators beyond Löwner-John ellipsoids." />
+        <Pitch pitch="Optimal active $\ell_p$ regression, and sensitivity bounds for $M$-estimators beyond Löwner-John ellipsoids." />
       </li>
       </ul>
       
