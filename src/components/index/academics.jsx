@@ -49,7 +49,7 @@ const Academics = () => (
         <PubTitle title='Improved Algorithms for Low Rank Approximation from Sparsity' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='SODA 2022' /> <br />
-        [<a href='https://arxiv.org/abs/2111.00668'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977073.95'>proceedings</a>] <br />
+        [<a href='https://arxiv.org/abs/2111.00668'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977073.95'>proceedings</a>] [<a href='https://www.youtube.com/watch?v=fdayFa-xZTc'>talk @ SODA</a>, <a href='/docs/slides/wy22.pdf'>slides</a>] <br />
         <br />
         <Pitch pitch={String.raw`If top $k$ singular vectors are sparse, then low rank approximation is $\frac{\nnz(A)}{\sqrt\eps}$ time instead of $\frac{\nnz(A)}{\sqrt\eps}k$.`} />
       </li>
