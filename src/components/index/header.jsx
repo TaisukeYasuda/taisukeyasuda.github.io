@@ -19,10 +19,10 @@ const Header = () => (
           <span style={ bold }>Contact:</span>&emsp; taisukey@cs.cmu.edu
         </div>
         <p>
-          I am a second year PhD student in the <a href='http://theory.cs.cmu.edu/'>Theory Group</a> in the Computer Science Department at Carnegie Mellon University. I am extremely fortunate to be advised by <a href='https://www.cs.cmu.edu/~dwoodruf/'>David Woodruff</a>. I am broadly interested in theoretical computer science, especially in algorithms and complexity for problems from data science and machine learning.
+          I am a second year PhD student in the <a href='http://theory.cs.cmu.edu/'>Theory Group</a> in the Computer Science Department at Carnegie Mellon University. I am extremely fortunate to be advised by <a href='https://www.cs.cmu.edu/~dwoodruf/'>David Woodruff</a>. I am broadly interested in theoretical computer science, especially in algorithmic problems from numerical linear algebra, optimization, and machine learning.
         </p>
         <p>
-          Previously, I was a Junior Quantitative Trader at <a href='https://akunacapital.com'>Akuna Capital</a>. 
+          In summer 2022, I will be a Student Researcher at Google Research NYC in the <a href='https://research.google/teams/algorithms-optimization/'>Algorithms and Optimization Group</a>. Previously, I was a Junior Quantitative Trader at <a href='https://akunacapital.com'>Akuna Capital</a>. 
         </p>
         <p>
         <a href='https://scholar.google.com/citations?user=c62WqiEAAAAJ&hl=en&sortby=pubdate'><i class="ai ai-google-scholar-square ai-2x"></i></a> &emsp;

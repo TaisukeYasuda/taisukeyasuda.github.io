@@ -3,14 +3,14 @@ import * as React from 'react';
 const sectionHeaderStyle = {
   width: '100%',
   textAlign: 'right',
-  borderBottom: '1px solid #eee',
+  borderBottom: '1px solid #ddd',
   lineHeight: '0.1em',
   margin: '10px 0 20px',
   color: '#999'
 }
 
 const Pitch = ({ pitch }) => (
-  <span style={ {color: "green"} }>"{pitch}"</span>
+  <span style={ {color: "green"} }>Summary: {pitch}</span>
 )
 
 const SectionHeader = ({ section }) => (
@@ -22,7 +22,7 @@ const SectionHeader = ({ section }) => (
 const PubVenue = ({ name }) => (<span style={ {fontWeight: 'bold'} }>{name}</span>)
 const PubInSubmission = () => (<span style={ {fontWeight: 'bold'} }>In submission</span>)
 const PubTitle = ({ title, bib }) => (
-  <span><span style={ {fontSize: '17px'} }>{title}</span> { bib == undefined ? '' : <span>[<a href={bib}>bib</a>]</span> }</span>
+  <span><span style={ { fontSize: '17px'} }>{title}</span> { bib == undefined ? '' : <span>[<a href={bib}>bib</a>]</span> }</span>
 )
 
 // 
@@ -34,7 +34,15 @@ const Academics = () => (
       <SectionHeader section={'Preprints'} />
       <ul>
       <li>
-        <PubTitle title='Active Sampling for Linear Regression Beyond the $\ell_2$ Norm' /> <br />
+        <PubTitle title='High-Dimensional Geometric Streaming in Polynomial Space' /> <br />
+        (with David P. Woodruff) <br />
+        <PubInSubmission /> <br />
+        [<a href='https://arxiv.org/abs/2204.03790'>arXiv</a>]<br />
+        <br />
+        <Pitch pitch="Using online numerical linear algebra to solve geometric streaming problems in $\poly(d)$ space." /><br /><br />
+      </li>
+      <li>
+        <PubTitle title='Active Linear Regression for $\ell_p$ Norms and Beyond' /> <br />
         (with Cameron Musco, Christopher Musco, and David P. Woodruff) <br />
         <PubInSubmission /> <br />
         [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>]<br />
@@ -96,8 +104,10 @@ const Academics = () => (
         (with Manuel Fernández V and David P. Woodruff) <br />
         <PubVenue name='ICML 2019' />, selected for a long talk <br />
         [<a href='https://arxiv.org/abs/1905.06394'>arXiv</a>] [<a href='http://proceedings.mlr.press/v97/yasuda19a.html'>proceedings</a>] [<a href='/docs/posters/fwy19.pdf'>poster</a>] [<a href='https://slideslive.com/38917909/optimization-and-graphical-models?t=0'>talk @ ICML</a>, <a href='/docs/slides/fwy19.pdf'>slides</a>] <br />
+        {/*
         <br />
-        <Pitch pitch="Optimal lower bounds on # of kernel evaluations for kernel ridge regression and $k$-means clustering." />
+        <Pitch pitch="Optimal lower bounds on # of kernel evaluations for kernel ridge regression and $k$-means clustering." /> 
+        */}
         <br /><br />
       </li>
       </ul>

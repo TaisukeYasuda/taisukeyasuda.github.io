@@ -3,11 +3,11 @@ body {
   overflow: hidden; }
 
 .container {
-  max-width: 800px; }
+  max-width: 900px; }
 .header {
   width: 100%;
   margin-top: 2rem;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #ddd; }
 
 .navbar-link:hover {
   text-decoration: none; }
@@ -19,7 +19,7 @@ section {
 footer {
   width: 100%;
   /* border-top: 1px solid #9F3ED5; */
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
   font-size: 12px;
   padding: 20px;
   text-align: center; }
