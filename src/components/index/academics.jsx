@@ -31,12 +31,16 @@ const Academics = () => (
   <section id="academics" className="docs-section">
     <h3>Research</h3>
     <div className="research">
-      <SectionHeader section={'Preprints'} />
+      {/*<SectionHeader section={'Preprints'} />
+      <ul>
+      </ul>*/}
+      
+      <SectionHeader section={2022} />
       <ul>
       <li>
         <PubTitle title='High-Dimensional Geometric Streaming in Polynomial Space' /> <br />
         (with David P. Woodruff) <br />
-        <PubInSubmission /> <br />
+        <PubVenue name='FOCS 2022' /> <br />
         [<a href='https://arxiv.org/abs/2204.03790'>arXiv</a>]<br />
         <br />
         <Pitch pitch="Using online numerical linear algebra to solve geometric streaming problems in $\poly(d)$ space." /><br /><br />
@@ -44,17 +48,13 @@ const Academics = () => (
       <li>
         <PubTitle title='Active Linear Regression for $\ell_p$ Norms and Beyond' /> <br />
         (with Cameron Musco, Christopher Musco, and David P. Woodruff) <br />
-        <PubInSubmission /> <br />
+        <PubVenue name='FOCS 2022' /> <br />
         [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>]<br />
         <br />
-        <Pitch pitch="Optimal active $\ell_p$ regression, and sensitivity bounds for $M$-estimators beyond Löwner-John ellipsoids." />
+        <Pitch pitch="Optimal active $\ell_p$ regression, and sensitivity bounds for $M$-estimators beyond Löwner-John ellipsoids." /><br /><br />
       </li>
-      </ul>
-      
-      <SectionHeader section={2022} />
-      <ul>
       <li>
-        <PubTitle title='Improved Algorithms for Low Rank Approximation from Sparsity' /> <br />
+        <PubTitle title='Improved Algorithms for Low Rank Approximation from Sparsity' bib='https://dblp.org/rec/conf/soda/WoodruffY22.html?view=bibtex' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='SODA 2022' /> <br />
         [<a href='https://arxiv.org/abs/2111.00668'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977073.95'>proceedings</a>] [<a href='https://www.youtube.com/watch?v=fdayFa-xZTc'>talk @ SODA</a>, <a href='/docs/slides/wy22.pdf'>slides</a>] <br />
