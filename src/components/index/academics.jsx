@@ -31,9 +31,17 @@ const Academics = () => (
   <section id="academics" className="docs-section">
     <h3>Research</h3>
     <div className="research">
-      {/*<SectionHeader section={'Preprints'} />
+      <SectionHeader section={'Preprints'} />
       <ul>
-      </ul>*/}
+      <li>
+        <PubTitle title='Online Lewis Weight Sampling' /> <br />
+        (with David P. Woodruff) <br />
+        <PubInSubmission /> <br />
+        {/*[<a href='/docs/papers/wy22.pdf'>pdf</a>]<br />*/}
+        <br />
+        <Pitch pitch="Optimal $\ell_p$ subspace embeddings in the online model, sliding windows, and adversarial streams." /><br /><br />
+      </li>
+      </ul>
       
       <SectionHeader section={2022} />
       <ul>
