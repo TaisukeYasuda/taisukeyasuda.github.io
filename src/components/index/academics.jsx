@@ -37,9 +37,9 @@ const Academics = () => (
         <PubTitle title='Online Lewis Weight Sampling' /> <br />
         (with David P. Woodruff) <br />
         <PubInSubmission /> <br />
-        {/*[<a href='/docs/papers/wy22.pdf'>pdf</a>]<br />*/}
+        [<a href='https://arxiv.org/abs/2207.08268'>arXiv</a>]<br />
         <br />
-        <Pitch pitch="Optimal $\ell_p$ subspace embeddings in the online model, sliding windows, and adversarial streams." /><br /><br />
+        <Pitch pitch="Optimal $\ell_p$ subspace embeddings in the online model, sliding windows, and adversarial streams." /><br />
       </li>
       </ul>
       
