@@ -34,6 +34,14 @@ const Academics = () => (
       <SectionHeader section={'Preprints'} />
       <ul>
       <li>
+        <PubTitle title='Sequential Attention for Feature Selection' /> <br />
+        (with MohammadHossein Bateni, Lin Chen, Matthew Fahrbach, Thomas Fu, and Vahab Mirrokni) <br />
+        <PubInSubmission /> <br />
+        [<a href='https://arxiv.org/abs/2209.14881'>arXiv</a>]<br />
+        <br />
+        <Pitch pitch="A sequential variation on the attention mechanism for feature selection with provable guarantees." /><br /><br />
+      </li>
+      <li>
         <PubTitle title='Online Lewis Weight Sampling' /> <br />
         (with David P. Woodruff) <br />
         <PubInSubmission /> <br />
