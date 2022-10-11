@@ -41,10 +41,14 @@ const Academics = () => (
         <br />
         <Pitch pitch="A sequential variation on the attention mechanism for feature selection with provable guarantees." /><br /><br />
       </li>
+      </ul>
+
+      <SectionHeader section={2023} />
+      <ul>
       <li>
         <PubTitle title='Online Lewis Weight Sampling' /> <br />
         (with David P. Woodruff) <br />
-        <PubInSubmission /> <br />
+        <PubVenue name='SODA 2023' /> <br />
         [<a href='https://arxiv.org/abs/2207.08268'>arXiv</a>]<br />
         <br />
         <Pitch pitch="Optimal $\ell_p$ subspace embeddings in the online model, sliding windows, and adversarial streams." /><br />
