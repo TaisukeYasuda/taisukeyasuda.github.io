@@ -31,25 +31,27 @@ const Academics = () => (
   <section id="academics" className="docs-section">
     <h3>Research</h3>
     <div className="research">
+      {/*
       <SectionHeader section={'Preprints'} />
       <ul>
-      <li>
-        <PubTitle title='Sequential Attention for Feature Selection' /> <br />
-        (with MohammadHossein Bateni, Lin Chen, Matthew Fahrbach, Thomas Fu, and Vahab Mirrokni) <br />
-        <PubInSubmission /> <br />
-        [<a href='https://arxiv.org/abs/2209.14881'>arXiv</a>]<br />
-        <br />
-        <Pitch pitch="A sequential variation on the attention mechanism for feature selection with provable guarantees." /><br /><br />
-      </li>
       </ul>
+      */}
 
       <SectionHeader section={2023} />
       <ul>
       <li>
+        <PubTitle title='Sequential Attention for Feature Selection' /> <br />
+        (with MohammadHossein Bateni, Lin Chen, Matthew Fahrbach, Thomas Fu, and Vahab Mirrokni) <br />
+        <PubVenue name='ICLR 2023' /> <br />
+        [<a href='https://arxiv.org/abs/2209.14881'>arXiv</a>] [<a href='https://openreview.net/forum?id=TTLLGx3eet'>proceedings</a>]<br />
+        <br />
+        <Pitch pitch="A sequential variation on the attention mechanism for feature selection with provable guarantees." /><br /><br />
+      </li>
+      <li>
         <PubTitle title='Online Lewis Weight Sampling' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='SODA 2023' /> <br />
-        [<a href='https://arxiv.org/abs/2207.08268'>arXiv</a>]<br />
+        [<a href='https://arxiv.org/abs/2207.08268'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977554.ch175'>proceedings</a>]<br />
         <br />
         <Pitch pitch="Optimal $\ell_p$ subspace embeddings in the online model, sliding windows, and adversarial streams." /><br />
       </li>
@@ -58,18 +60,18 @@ const Academics = () => (
       <SectionHeader section={2022} />
       <ul>
       <li>
-        <PubTitle title='High-Dimensional Geometric Streaming in Polynomial Space' /> <br />
+        <PubTitle title='High-Dimensional Geometric Streaming in Polynomial Space' bib='https://dblp.org/rec/conf/focs/Woodruff022.html?view=bibtex' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='FOCS 2022' /> <br />
-        [<a href='https://arxiv.org/abs/2204.03790'>arXiv</a>]<br />
+        [<a href='https://arxiv.org/abs/2204.03790'>arXiv</a>] [<a href='https://doi.org/10.1109/FOCS54457.2022.00075'>proceedings</a>]<br />
         <br />
         <Pitch pitch="Using online numerical linear algebra to solve geometric streaming problems in $\poly(d)$ space." /><br /><br />
       </li>
       <li>
-        <PubTitle title='Active Linear Regression for $\ell_p$ Norms and Beyond' /> <br />
+        <PubTitle title='Active Linear Regression for $\ell_p$ Norms and Beyond' bib='https://dblp.org/rec/conf/focs/MuscoMW022.html?view=bibtex' /> <br />
         (with Cameron Musco, Christopher Musco, and David P. Woodruff) <br />
         <PubVenue name='FOCS 2022' /> <br />
-        [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>]<br />
+        [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>] [<a href='https://doi.org/10.1109/FOCS54457.2022.00076'>proceedings</a>]<br />
         <br />
         <Pitch pitch="Optimal active $\ell_p$ regression, and sensitivity bounds for $M$-estimators beyond Löwner-John ellipsoids." /><br /><br />
       </li>
