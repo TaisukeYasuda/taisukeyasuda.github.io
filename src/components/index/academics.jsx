@@ -40,6 +40,13 @@ const Academics = () => (
       <SectionHeader section={2023} />
       <ul>
       <li>
+        <PubTitle title='New Subset Selection Algorithms for Low Rank Approximation: Offline and Online' /> <br />
+        (with David P. Woodruff) <br />
+        <PubVenue name='STOC 2023' /> <br />
+        <br />
+        <Pitch pitch="Well-conditioned spanning sets for improved low rank approximation and $\ell_p$ subspace embeddings." /><br /><br />
+      </li>
+      <li>
         <PubTitle title='Sequential Attention for Feature Selection' /> <br />
         (with MohammadHossein Bateni, Lin Chen, Matthew Fahrbach, Thomas Fu, and Vahab Mirrokni) <br />
         <PubVenue name='ICLR 2023' /> <br />
@@ -51,9 +58,9 @@ const Academics = () => (
         <PubTitle title='Online Lewis Weight Sampling' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='SODA 2023' /> <br />
-        [<a href='https://arxiv.org/abs/2207.08268'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977554.ch175'>proceedings</a>]<br />
+        [<a href='https://arxiv.org/abs/2207.08268'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977554.ch175'>proceedings</a>] [<a href='/docs/slides/wy23_soda.pdf'>slides</a>]<br />
         <br />
-        <Pitch pitch="Optimal $\ell_p$ subspace embeddings in the online model, sliding windows, and adversarial streams." /><br />
+        <Pitch pitch="Optimal $\ell_p$ subspace embeddings in the online model and sliding windows." /><br />
       </li>
       </ul>
       
@@ -63,7 +70,7 @@ const Academics = () => (
         <PubTitle title='High-Dimensional Geometric Streaming in Polynomial Space' bib='https://dblp.org/rec/conf/focs/Woodruff022.html?view=bibtex' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='FOCS 2022' /> <br />
-        [<a href='https://arxiv.org/abs/2204.03790'>arXiv</a>] [<a href='https://doi.org/10.1109/FOCS54457.2022.00075'>proceedings</a>]<br />
+        [<a href='https://arxiv.org/abs/2204.03790'>arXiv</a>] [<a href='https://doi.org/10.1109/FOCS54457.2022.00075'>proceedings</a>] [<a href='/docs/slides/wy22_focs.pdf'>slides</a>]<br />
         <br />
         <Pitch pitch="Using online numerical linear algebra to solve geometric streaming problems in $\poly(d)$ space." /><br /><br />
       </li>
@@ -71,7 +78,7 @@ const Academics = () => (
         <PubTitle title='Active Linear Regression for $\ell_p$ Norms and Beyond' bib='https://dblp.org/rec/conf/focs/MuscoMW022.html?view=bibtex' /> <br />
         (with Cameron Musco, Christopher Musco, and David P. Woodruff) <br />
         <PubVenue name='FOCS 2022' /> <br />
-        [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>] [<a href='https://doi.org/10.1109/FOCS54457.2022.00076'>proceedings</a>]<br />
+        [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>] [<a href='https://doi.org/10.1109/FOCS54457.2022.00076'>proceedings</a>] [<a href='/docs/slides/mmwy22_focs.pdf'>slides</a>]<br />
         <br />
         <Pitch pitch="Optimal active $\ell_p$ regression, and sensitivity bounds for $M$-estimators beyond Löwner-John ellipsoids." /><br /><br />
       </li>
