@@ -52,6 +52,7 @@ const Academics = () => (
         <PubTitle title='New Subset Selection Algorithms for Low Rank Approximation: Offline and Online' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='STOC 2023' /> <br />
+        [<a href='https://arxiv.org/abs/2304.09217'>arXiv</a>]<br />
         <br />
         <Pitch pitch="Well-conditioned spanning sets for improved low rank approximation and $\ell_p$ subspace embeddings." /><br /><br />
       </li>
