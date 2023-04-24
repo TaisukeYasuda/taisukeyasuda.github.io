@@ -36,18 +36,16 @@ const Academics = () => (
       <ul>
       </ul>
       */}
-      <SectionHeader section={'Preprints'} />
+
+      <SectionHeader section={2023} />
       <ul>
       <li>
         <PubTitle title='Sharper Bounds for $\ell_p$ Sensitivity Sampling' /> <br />
         (with David P. Woodruff) <br />
-        <PubInSubmission /> <br />
+        <PubVenue name='ICML 2023' />, selected for short live presentation<br />
         <br />
+        <Pitch pitch="Guarantees for sensitivity sampling beyond a naive union bound." /><br /><br />
       </li>
-      </ul>
-
-      <SectionHeader section={2023} />
-      <ul>
       <li>
         <PubTitle title='New Subset Selection Algorithms for Low Rank Approximation: Offline and Online' /> <br />
         (with David P. Woodruff) <br />
