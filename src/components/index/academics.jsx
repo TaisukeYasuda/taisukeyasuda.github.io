@@ -24,6 +24,7 @@ const PubInSubmission = () => (<span style={ {fontWeight: 'bold'} }>In submissio
 const PubTitle = ({ title, bib }) => (
   <span><span style={ { fontSize: '17px'} }>{title}</span> { bib == undefined ? '' : <span>[<a href={bib}>bib</a>]</span> }</span>
 )
+const PubSpecial = ({ name }) => (<span style={ {fontWeight: 'bold', color: 'red'} }>{name}</span>)
 
 // 
 
@@ -43,14 +44,15 @@ const Academics = () => (
         <PubTitle title='Sharper Bounds for $\ell_p$ Sensitivity Sampling' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='ICML 2023' />, selected for short live presentation<br />
+        [<a href='https://arxiv.org/abs/2306.00732'>arXiv</a>]<br />
         <br />
         <Pitch pitch="Guarantees for sensitivity sampling beyond a naive union bound." /><br /><br />
       </li>
       <li>
-        <PubTitle title='New Subset Selection Algorithms for Low Rank Approximation: Offline and Online' /> <br />
+        <PubTitle title='New Subset Selection Algorithms for Low Rank Approximation: Offline and Online' bib='https://dblp.org/rec/conf/stoc/Woodruff023.html?view=bibtex' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='STOC 2023' /> <br />
-        [<a href='https://arxiv.org/abs/2304.09217'>arXiv</a>]<br />
+        [<a href='https://arxiv.org/abs/2304.09217'>arXiv</a>] [<a href='https://doi.org/10.1145/3564246.3585100'>proceedings</a>]<br />
         <br />
         <Pitch pitch="Well-conditioned spanning sets for improved low rank approximation and $\ell_p$ subspace embeddings." /><br /><br />
       </li>
@@ -66,6 +68,7 @@ const Academics = () => (
         <PubTitle title='Online Lewis Weight Sampling' bib='https://dblp.org/rec/conf/soda/Woodruff023.html?view=bibtex' /> <br />
         (with David P. Woodruff) <br />
         <PubVenue name='SODA 2023' /> <br />
+        <PubSpecial name='Invited to the special issue for SODA 2023' /><br />
         [<a href='https://arxiv.org/abs/2207.08268'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977554.ch175'>proceedings</a>] [<a href='/docs/slides/wy23_soda.pdf'>slides</a>]<br />
         <br />
         <Pitch pitch="Optimal $\ell_p$ subspace embeddings in the online model and sliding windows." /><br />
