@@ -19,7 +19,7 @@ const Header = () => (
           <span style={ bold }>Contact:</span>&emsp; taisukey@cs.cmu.edu
         </div>
         <p>
-          I am a third year PhD student in the <a href='http://theory.cs.cmu.edu/'>Theory Group</a> in the Computer Science Department at Carnegie Mellon University. I am extremely fortunate to be advised by <a href='https://www.cs.cmu.edu/~dwoodruf/'>David Woodruff</a>. I am broadly interested in theoretical computer science, especially in algorithmic problems from numerical linear algebra, optimization, and machine learning.
+          I am a fourth year PhD student in the <a href='http://theory.cs.cmu.edu/'>Theory Group</a> in the Computer Science Department at Carnegie Mellon University. I am extremely fortunate to be advised by <a href='https://www.cs.cmu.edu/~dwoodruf/'>David Woodruff</a>. I am broadly interested in theoretical computer science, especially in algorithmic problems from numerical linear algebra, optimization, and machine learning.
         </p>
         <p>
           I am also currently a Research Intern at Google Research NYC in the <a href='https://research.google/teams/algorithms-optimization/'>Algorithms and Optimization Group</a>. Previously, I was a Junior Quantitative Trader at <a href='https://akunacapital.com'>Akuna Capital</a>. 
