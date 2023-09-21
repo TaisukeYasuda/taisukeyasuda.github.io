@@ -29,6 +29,16 @@ const PubSection = ({ name }) => (<span style={{ fontSize: '19px', fontWeight: '
 
 // 
 
+const DDWY2023 = () => (
+  <li>
+    <PubTitle title='Sketching Algorithms for Sparse Dictionary Learning: PTAS and Turnstile Streaming' /> <br />
+    (with Gregory Dexter, Petros Drineas, and David P. Woodruff) <br />
+    <PubVenue name='NeurIPS 2023' /><br />
+    <br />
+    <Pitch pitch="Sketching algorithms for dictionary learning and clustering" /><br />
+  </li>
+)
+
 const AY2023 = () => (
   <li>
     <PubTitle title='Performance of $\ell_1$ Regularization for Sparse Convex Optimization' /> <br />
@@ -42,10 +52,10 @@ const AY2023 = () => (
 
 const WY2023c = () => (
   <li>
-    <PubTitle title='Sharper Bounds for $\ell_p$ Sensitivity Sampling' /> <br />
+    <PubTitle title='Sharper Bounds for $\ell_p$ Sensitivity Sampling' bib='https://dblp.org/rec/conf/icml/WoodruffY23.html?view=bibtex' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='ICML 2023' />, selected for short live presentation<br />
-    [<a href='https://arxiv.org/abs/2306.00732'>arXiv</a>] [<a href='https://proceedings.mlr.press/v202/woodruff23a.html'>proceedings</a>]<br />
+    [<a href='https://arxiv.org/abs/2306.00732'>arXiv</a>] [<a href='https://proceedings.mlr.press/v202/woodruff23a.html'>proceedings</a>] [<a href='/docs/slides/wy23_icml.pdf'>slides</a>] [<a href='/docs/posters/wy23.pdf'>poster</a>]<br />
     <br />
     <Pitch pitch="Guarantees for sensitivity sampling beyond a naive union bound" /><br />
   </li>
@@ -67,7 +77,7 @@ const YBCFFM2023 = () => (
     <PubTitle title='Sequential Attention for Feature Selection' bib='https://dblp.org/rec/conf/iclr/00020CFFM23.html?view=bibtex' /> <br />
     (with MohammadHossein Bateni, Lin Chen, Matthew Fahrbach, Gang Fu, and Vahab Mirrokni) <br />
     <PubVenue name='ICLR 2023' /> <br />
-    [<a href='https://arxiv.org/abs/2209.14881'>arXiv</a>] [<a href='https://openreview.net/forum?id=TTLLGx3eet'>proceedings</a>] [<a href='https://ai.googleblog.com/2023/02/google-research-2022-beyond-algorithms.html'>Google Research blog</a>] [<a href='https://github.com/google-research/google-research/tree/master/sequential_attention'>code</a>]<br />
+    [<a href='https://arxiv.org/abs/2209.14881'>arXiv</a>] [<a href='https://openreview.net/forum?id=TTLLGx3eet'>proceedings</a>] [<a href='/docs/posters/ybcffm23.pdf'>poster</a>] [<a href='https://ai.googleblog.com/2023/02/google-research-2022-beyond-algorithms.html'>Google Research blog</a>] [<a href='https://github.com/google-research/google-research/tree/master/sequential_attention'>code</a>]<br />
     <br />
     <Pitch pitch="A sequential variation on the attention mechanism for feature selection with provable guarantees" /><br />
   </li>
@@ -179,6 +189,7 @@ const ResearchAll = () => (
 
     <SectionHeader section={2023} />
     <ul>
+      <DDWY2023 /><br />
       <WY2023c /><br />
       <WY2023b /><br />
       <YBCFFM2023 /><br />
