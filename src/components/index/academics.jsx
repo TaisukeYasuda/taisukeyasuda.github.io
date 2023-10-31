@@ -34,6 +34,7 @@ const DDWY2023 = () => (
     <PubTitle title='Sketching Algorithms for Sparse Dictionary Learning: PTAS and Turnstile Streaming' /> <br />
     (with Gregory Dexter, Petros Drineas, and David P. Woodruff) <br />
     <PubVenue name='NeurIPS 2023' /><br />
+    [<a href='https://arxiv.org/abs/2310.19068'>arXiv</a>]<br />
     <br />
     <Pitch pitch="Sketching algorithms for dictionary learning and clustering" /><br />
   </li>
