@@ -34,7 +34,7 @@ const DDWY2023 = () => (
     <PubTitle title='Sketching Algorithms for Sparse Dictionary Learning: PTAS and Turnstile Streaming' /> <br />
     (with Gregory Dexter, Petros Drineas, and David P. Woodruff) <br />
     <PubVenue name='NeurIPS 2023' /><br />
-    [<a href='https://arxiv.org/abs/2310.19068'>arXiv</a>]<br />
+    [<a href='https://arxiv.org/abs/2310.19068'>arXiv</a>] [<a href='https://openreview.net/forum?id=qHzEFxtheD'>proceedings</a>]<br />
     <br />
     <Pitch pitch="Sketching algorithms for dictionary learning and clustering" /><br />
   </li>
@@ -112,7 +112,7 @@ const MMWY2022 = () => (
     <PubTitle title='Active Linear Regression for $\ell_p$ Norms and Beyond' bib='https://dblp.org/rec/conf/focs/MuscoMW022.html?view=bibtex' /> <br />
     (with Cameron Musco, Christopher Musco, and David P. Woodruff) <br />
     <PubVenue name='FOCS 2022' /> <br />
-    [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>] [<a href='https://doi.org/10.1109/FOCS54457.2022.00076'>proceedings</a>] [<a href='https://vimeo.com/user39621409/review/771281672/15ad8440d8#t=1h4m37s'>talk @ FOCS</a>, <a href='/docs/slides/mmwy22_focs.pdf'>slides</a>]<br />
+    [<a href='https://arxiv.org/abs/2111.04888'>arXiv</a>] [<a href='https://doi.org/10.1109/FOCS54457.2022.00076'>proceedings</a>] [<a href='https://vimeo.com/user39621409/review/771281672/15ad8440d8#t=1h4m37s'>talk @ FOCS</a>, <a href='/docs/slides/mmwy22_focs.pdf'>slides</a>] [<a href='https://www.youtube.com/watch?v=yWSgcyPgrSQ&ab_channel=SimonsInstitute'>David's talk @ Simons Institute</a>]<br />
     <br />
     <Pitch pitch="Optimal active $\ell_p$ regression, and sensitivity bounds for $M$-estimators beyond Löwner-John ellipsoids" /><br />
   </li>
@@ -125,7 +125,7 @@ const WY2022a = () => (
     <PubVenue name='SODA 2022' /> <br />
     [<a href='https://arxiv.org/abs/2111.00668'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977073.95'>proceedings</a>] [<a href='https://www.youtube.com/watch?v=fdayFa-xZTc'>talk @ SODA</a>, <a href='/docs/slides/wy22.pdf'>slides</a>] <br />
     <br />
-    <Pitch pitch={String.raw`If top $k$ singular vectors are sparse, then low rank approximation is $\frac{\nnz(A)}{\sqrt\eps}$ time instead of $\frac{\nnz(A)}{\sqrt\eps}k$`} />
+    <Pitch pitch={String.raw`Spectral low rank approximation in $\frac{\nnz(A)}{\sqrt\eps}$ time instead of $\frac{\nnz(A)}{\sqrt\eps}k$ when singular vectors are sparse`} />
   </li>
 )
 
@@ -279,11 +279,11 @@ const Academics = () => {
   return (
     <section id="academics" className="docs-section">
       <div className={showAll ? undefined : "hidden"}>
-        <PubSection name="All Papers" /> [<a onClick={() => setShowAll(false)}>show selected</a>]
+        <PubSection name="All papers" /> [<a onClick={() => setShowAll(false)}>show selected papers</a>]
         <ResearchAll />
       </div>
       <div className={showAll ? "hidden" : undefined}>
-        <PubSection name="Selected Papers" /> [<a onClick={() => setShowAll(true)}>show all</a>]
+        <PubSection name="Selected papers" /> [<a onClick={() => setShowAll(true)}>show all papers</a>]
         <ResearchSelected />
       </div>
       <Teaching />
