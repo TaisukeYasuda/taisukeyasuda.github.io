@@ -29,9 +29,20 @@ const PubSection = ({ name }) => (<span style={{ fontSize: '19px', fontWeight: '
 
 // 
 
+const YAFBM2024 = () => (
+  <li>
+    <PubTitle title='SequentialAttention++ for Block Sparsification: Differentiable Pruning Meets Combinatorial Optimization' /> <br />
+    (with Kyriakos Axiotis, Gang Fu, MohammadHossein Bateni, and Vahab Mirrokni) <br />
+    <PubInSubmission /><br />
+    [<a href='https://arxiv.org/abs/2402.17902'>arXiv</a>]<br />
+    <br />
+    <Pitch pitch="Combining differentiable pruning and combinatorial optimization for neural network pruning" /><br /><br />
+  </li>
+)
+
 const DDWY2023 = () => (
   <li>
-    <PubTitle title='Sketching Algorithms for Sparse Dictionary Learning: PTAS and Turnstile Streaming' /> <br />
+    <PubTitle title='Sketching Algorithms for Sparse Dictionary Learning: PTAS and Turnstile Streaming' bib='https://dblp.org/rec/conf/nips/DexterDW023.html?view=bibtex' /> <br />
     (with Gregory Dexter, Petros Drineas, and David P. Woodruff) <br />
     <PubVenue name='NeurIPS 2023' /><br />
     [<a href='https://arxiv.org/abs/2310.19068'>arXiv</a>] [<a href='https://openreview.net/forum?id=qHzEFxtheD'>proceedings</a>]<br />
@@ -185,6 +196,7 @@ const ResearchAll = () => (
   <div className="research">
     <SectionHeader section={'Preprints'} />
     <ul>
+      <YAFBM2024 />
       <AY2023 />
     </ul>
 
