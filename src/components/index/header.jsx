@@ -15,8 +15,9 @@ const Header = () => (
     <div className="row">
       <div className="eight columns">
         <h1 style={ {fontWeight: 'lighter', fontSize: '3em'} }><span style={ {fontWeight: 'bold'} }>Taisuke</span> Yasuda</h1>
+        <p>I will join <a href='https://voleon.com/'>The Voleon Group</a> in July 2024 as a Member of Research Staff.</p>
         <p>
-          I am a 4th year PhD student in the <a href='http://theory.cs.cmu.edu/'>CS Theory Group</a> at <a href='https://csd.cmu.edu/'>Carnegie Mellon University</a>, advised by <a href='https://www.cs.cmu.edu/~dwoodruf/'>David Woodruff</a>. My research interests are in theoretical computer science, with a focus on linear algebra, geometry, statistics, and machine learning.
+          I received my PhD in computer science in May 2024 at <a href='https://csd.cmu.edu/'>Carnegie Mellon University</a>, advised by <a href='https://www.cs.cmu.edu/~dwoodruf/'>David Woodruff</a>. I worked in the <a href='http://theory.cs.cmu.edu/'>CS Theory Group</a>, with a focus on algorithms for linear algebra, geometry, statistics, and machine learning.
         </p>
         <p>
           Previously, I was a Research Intern in the <a href='https://research.google/teams/algorithms-optimization/'>Algorithms and Optimization Group</a> at Google Research and a Junior Quantitative Trader at <a href='https://akunacapital.com'>Akuna Capital</a>. 

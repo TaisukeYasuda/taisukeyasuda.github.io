@@ -25,9 +25,29 @@ const PubTitle = ({ title, bib }) => (
   <span><span style={{ fontSize: '17px' }}>{title}</span> {bib == undefined ? '' : <span>[<a href={bib}>bib</a>]</span>}</span>
 )
 const PubSpecial = ({ name }) => (<span style={{ fontWeight: 'bold', color: 'red' }}>{name}</span>)
-const PubSection = ({ name }) => (<span style={{ fontSize: '19px', fontWeight: 'bold' }}>{name}</span>)
+const PubSection = ({ name }) => (<span style={{ fontSize: '18px', fontWeight: 'bold' }}>{name}</span>)
 
 // 
+
+const WY2024b = () => (
+  <li>
+    <PubTitle title='Coresets for Multiple $\ell_p$ Regression' /> <br />
+    (with David P. Woodruff) <br />
+    <PubVenue name='ICML 2024' /><br />
+    <br />
+    <Pitch pitch="Nearly optimal coresets for multiple $\ell_p$ regression and nearly optimal sublinear power means" /><br /><br />
+  </li>
+)
+
+const WY2024a = () => (
+  <li>
+    <PubTitle title='Reweighted Solutions for Weighted Low Rank Approximation' /> <br />
+    (with David P. Woodruff) <br />
+    <PubVenue name='ICML 2024' /><br />
+    <br />
+    <Pitch pitch="A simple algorithm for weighted low rank approximation based on reweighting" /><br /><br />
+  </li>
+)
 
 const YAFBM2024 = () => (
   <li>
@@ -165,7 +185,7 @@ const ATWY2019 = () => (
     <PubTitle title='The Nonlinear Stability Regime of the Viscous Faraday Wave Problem' /> <br />
     (with David Altizio, Ian Tice, and Xinyu Wu) <br />
     <PubVenue name='Quart. Appl. Math.' /> <br />
-    [<a href='https://arxiv.org/abs/1905.04747'>arXiv</a>] [<a href='https://doi.org/10.1090/qam/1562'>journal</a>] [<a href='/docs/ms-thesis/ms-thesis.pdf'>master's thesis</a>] [<a href='/docs/ms-thesis/slides.pdf'>defense slides</a>] <br />
+    [<a href='https://arxiv.org/abs/1905.04747'>arXiv</a>] [<a href='https://doi.org/10.1090/qam/1562'>journal</a>]<br />
   </li>
 )
 
@@ -198,6 +218,12 @@ const ResearchAll = () => (
     <ul>
       <YAFBM2024 />
       <AY2023 />
+    </ul>
+
+    <SectionHeader section={2024} />
+    <ul>
+      <WY2024b /><br />
+      <WY2024a />
     </ul>
 
     <SectionHeader section={2023} />
@@ -245,6 +271,23 @@ const ResearchSelected = () => (
       <WY2022b /><br />
       <MMWY2022 />
     </ul>
+  </div>
+);
+
+const Theses = () => (
+  <div>
+    <h3>Theses</h3>
+    <PubTitle title='Algorithms for Matrix Approximation: Sketching, Sampling, and Sparse Optimization' /><br />
+    <span style={{ fontWeight: 'bold' }}>PhD Thesis, Computer Science, May 2024</span><br />
+    Committee: <a href='https://www.cs.cmu.edu/~dwoodruf/'>David Woodruff</a> (Chair), <a href='https://cs.nyu.edu/~anupamg/'>Anupam Gupta</a>, <a href='https://www.cs.cmu.edu/~yangp/'>Richard Peng</a>, <a href='https://people.cs.umass.edu/~cmusco/'>Cameron Musco</a><br />
+    [<a href='/docs/phd-thesis/phd-thesis.pdf'>pdf</a>] [<a href='/docs/phd-thesis/slides.pdf'>slides</a>]<br />
+
+    <br />
+
+    <PubTitle title='Asymptotic Stability of the Faraday Wave Problem' /><br />
+    <span style={{ fontWeight: 'bold' }}>MS Thesis, Mathematical Sciences, May 2019</span><br />
+    Committee: <a href='https://www.math.cmu.edu/~iantice/'>Ian Tice</a> (Chair), <a href='http://giovannileoni.weebly.com/'>Giovanni Leoni</a>, <a href='https://sites.google.com/berkeley.edu/fweber'>Franziska Weber</a><br />
+    [<a href='/docs/ms-thesis/ms-thesis.pdf'>pdf</a>] [<a href='/docs/ms-thesis/slides.pdf'>slides</a>]
   </div>
 );
 
@@ -298,6 +341,7 @@ const Academics = () => {
         <PubSection name="Selected papers" /> [<a onClick={() => setShowAll(true)}>show all papers</a>]
         <ResearchSelected />
       </div>
+      <Theses />
       <Teaching />
     </section>
   );
