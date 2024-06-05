@@ -34,6 +34,7 @@ const WY2024b = () => (
     <PubTitle title='Coresets for Multiple $\ell_p$ Regression' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='ICML 2024' /><br />
+    [<a href='https://arxiv.org/abs/2406.02432'>arXiv</a>]<br />
     <br />
     <Pitch pitch="Nearly optimal coresets for multiple $\ell_p$ regression and nearly optimal sublinear power means" /><br /><br />
   </li>
@@ -44,6 +45,7 @@ const WY2024a = () => (
     <PubTitle title='Reweighted Solutions for Weighted Low Rank Approximation' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='ICML 2024' /><br />
+    [<a href='https://arxiv.org/abs/2406.02431'>arXiv</a>]<br />
     <br />
     <Pitch pitch="A simple algorithm for weighted low rank approximation based on reweighting" /><br /><br />
   </li>
@@ -280,7 +282,7 @@ const Theses = () => (
     <PubTitle title='Algorithms for Matrix Approximation: Sketching, Sampling, and Sparse Optimization' /><br />
     <span style={{ fontWeight: 'bold' }}>PhD Thesis, Computer Science, May 2024</span><br />
     Committee: <a href='https://www.cs.cmu.edu/~dwoodruf/'>David Woodruff</a> (Chair), <a href='https://cs.nyu.edu/~anupamg/'>Anupam Gupta</a>, <a href='https://www.cs.cmu.edu/~yangp/'>Richard Peng</a>, <a href='https://people.cs.umass.edu/~cmusco/'>Cameron Musco</a><br />
-    [<a href='/docs/phd-thesis/phd-thesis.pdf'>pdf</a>] [<a href='/docs/phd-thesis/slides.pdf'>slides</a>]<br />
+    [<a href='/docs/phd-thesis/phd-thesis.pdf'>pdf</a>] [<a href='/docs/phd-thesis/slides.pdf'>slides</a>] [<a href='http://reports-archive.adm.cs.cmu.edu/anon/anon/usr/ftp/home/ftp/2024/abstracts/24-110.html'>CMU</a>]<br />
 
     <br />
 
