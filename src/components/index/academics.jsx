@@ -29,14 +29,25 @@ const PubSection = ({ name }) => (<span style={{ fontSize: '18px', fontWeight: '
 
 // 
 
+const WY2024c = () => (
+  <li>
+    <PubTitle title='Nearly Linear Sparsification of $\ell_p$ Subspace Approximation' /> <br />
+    (with David P. Woodruff) <br />
+    <PubInSubmission /><br />
+    [<a href='https://arxiv.org/abs/2407.03262'>arXiv</a>]<br />
+    <br />
+    <Pitch pitch="Nearly linear size strong coresets for $\ell_p$ subspace approximation" /><br />
+  </li>
+)
+
 const WY2024b = () => (
   <li>
     <PubTitle title='Coresets for Multiple $\ell_p$ Regression' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='ICML 2024' /><br />
-    [<a href='https://arxiv.org/abs/2406.02432'>arXiv</a>]<br />
+    [<a href='https://arxiv.org/abs/2406.02432'>arXiv</a>] [<a href='https://www.youtube.com/watch?v=8lbYjHIkhBo'>talk @ ICML</a>, <a href='/docs/slides/wy24_icml.pdf'>slides</a>]<br />
     <br />
-    <Pitch pitch="Nearly optimal coresets for multiple $\ell_p$ regression and nearly optimal sublinear power means" /><br /><br />
+    <Pitch pitch="Nearly optimal coresets for multiple $\ell_p$ regression and nearly optimal sublinear power means" /><br />
   </li>
 )
 
@@ -47,7 +58,7 @@ const WY2024a = () => (
     <PubVenue name='ICML 2024' /><br />
     [<a href='https://arxiv.org/abs/2406.02431'>arXiv</a>]<br />
     <br />
-    <Pitch pitch="A simple algorithm for weighted low rank approximation based on reweighting" /><br /><br />
+    <Pitch pitch="A simple algorithm for weighted low rank approximation based on reweighting" /><br />
   </li>
 )
 
@@ -58,7 +69,7 @@ const YAFBM2024 = () => (
     <PubInSubmission /><br />
     [<a href='https://arxiv.org/abs/2402.17902'>arXiv</a>]<br />
     <br />
-    <Pitch pitch="Combining differentiable pruning and combinatorial optimization for neural network pruning" /><br /><br />
+    <Pitch pitch="Combining differentiable pruning and combinatorial optimization for neural network pruning" /><br />
   </li>
 )
 
@@ -218,7 +229,8 @@ const ResearchAll = () => (
   <div className="research">
     <SectionHeader section={'Preprints'} />
     <ul>
-      <YAFBM2024 />
+      <WY2024c /><br />
+      <YAFBM2024 /><br />
       <AY2023 />
     </ul>
 
@@ -267,6 +279,7 @@ const ResearchSelected = () => (
   <div className="research">
     <SectionHeader section={'Selected'} />
     <ul>
+      <WY2024c /><br />
       <AY2023 /><br />
       <WY2023b /><br />
       <WY2023a /><br />
