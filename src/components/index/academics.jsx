@@ -56,7 +56,7 @@ const WY2024a = () => (
     <PubTitle title='Reweighted Solutions for Weighted Low Rank Approximation' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='ICML 2024' /><br />
-    [<a href='https://arxiv.org/abs/2406.02431'>arXiv</a>]<br />
+    [<a href='https://arxiv.org/abs/2406.02431'>arXiv</a>] [<a href='/docs/posters/wy24a.pdf'>poster</a>]<br />
     <br />
     <Pitch pitch="A simple algorithm for weighted low rank approximation based on reweighting" /><br />
   </li>
