@@ -45,7 +45,7 @@ const WY2024b = () => (
     <PubTitle title='Coresets for Multiple $\ell_p$ Regression' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='ICML 2024' /><br />
-    [<a href='https://arxiv.org/abs/2406.02432'>arXiv</a>] [<a href='https://www.youtube.com/watch?v=8lbYjHIkhBo'>talk @ ICML</a>, <a href='/docs/slides/wy24_icml.pdf'>slides</a>]<br />
+    [<a href='https://arxiv.org/abs/2406.02432'>arXiv</a>] [<a href='https://openreview.net/forum?id=4UWjqrMmFp'>proceedings</a>] [<a href='https://www.youtube.com/watch?v=8lbYjHIkhBo'>talk @ ICML</a>, <a href='/docs/slides/wy24_icml.pdf'>slides</a>] [<a href='/docs/posters/wy24b.pdf'>poster</a>]<br />
     <br />
     <Pitch pitch="Nearly optimal coresets for multiple $\ell_p$ regression and nearly optimal sublinear power means" /><br />
   </li>
@@ -56,7 +56,7 @@ const WY2024a = () => (
     <PubTitle title='Reweighted Solutions for Weighted Low Rank Approximation' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='ICML 2024' /><br />
-    [<a href='https://arxiv.org/abs/2406.02431'>arXiv</a>] [<a href='/docs/posters/wy24a.pdf'>poster</a>]<br />
+    [<a href='https://arxiv.org/abs/2406.02431'>arXiv</a>] [<a href='https://openreview.net/forum?id=r9XICONppE'>proceedings</a>] [<a href='/docs/posters/wy24a.pdf'>poster</a>]<br />
     <br />
     <Pitch pitch="A simple algorithm for weighted low rank approximation based on reweighting" /><br />
   </li>
