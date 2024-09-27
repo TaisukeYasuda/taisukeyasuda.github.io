@@ -29,6 +29,16 @@ const PubSection = ({ name }) => (<span style={{ fontSize: '18px', fontWeight: '
 
 // 
 
+const WY2024d = () => (
+  <li>
+    <PubTitle title='John Ellipsoids via Lazy Updates' /> <br />
+    (with David P. Woodruff) <br />
+    <PubVenue name='NeurIPS 2024' /><br />
+    <br />
+    <Pitch pitch="Faster algorithms for approximating John ellipsoids" /><br />
+  </li>
+)
+
 const WY2024c = () => (
   <li>
     <PubTitle title='Nearly Linear Sparsification of $\ell_p$ Subspace Approximation' /> <br />
@@ -42,7 +52,7 @@ const WY2024c = () => (
 
 const WY2024b = () => (
   <li>
-    <PubTitle title='Coresets for Multiple $\ell_p$ Regression' /> <br />
+    <PubTitle title='Coresets for Multiple $\ell_p$ Regression' bib='https://dblp.org/rec/conf/icml/Woodruff024a.html?view=bibtex' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='ICML 2024' /><br />
     [<a href='https://arxiv.org/abs/2406.02432'>arXiv</a>] [<a href='https://openreview.net/forum?id=4UWjqrMmFp'>proceedings</a>] [<a href='https://www.youtube.com/watch?v=8lbYjHIkhBo'>talk @ ICML</a>, <a href='/docs/slides/wy24_icml.pdf'>slides</a>] [<a href='/docs/posters/wy24b.pdf'>poster</a>]<br />
@@ -53,7 +63,7 @@ const WY2024b = () => (
 
 const WY2024a = () => (
   <li>
-    <PubTitle title='Reweighted Solutions for Weighted Low Rank Approximation' /> <br />
+    <PubTitle title='Reweighted Solutions for Weighted Low Rank Approximation' bib='https://dblp.org/rec/conf/icml/Woodruff024.html?view=bibtex' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='ICML 2024' /><br />
     [<a href='https://arxiv.org/abs/2406.02431'>arXiv</a>] [<a href='https://openreview.net/forum?id=r9XICONppE'>proceedings</a>] [<a href='/docs/posters/wy24a.pdf'>poster</a>]<br />
@@ -66,7 +76,7 @@ const YAFBM2024 = () => (
   <li>
     <PubTitle title='SequentialAttention++ for Block Sparsification: Differentiable Pruning Meets Combinatorial Optimization' /> <br />
     (with Kyriakos Axiotis, Gang Fu, MohammadHossein Bateni, and Vahab Mirrokni) <br />
-    <PubInSubmission /><br />
+    <PubVenue name='NeurIPS 2024' /><br />
     [<a href='https://arxiv.org/abs/2402.17902'>arXiv</a>]<br />
     <br />
     <Pitch pitch="Combining differentiable pruning and combinatorial optimization for neural network pruning" /><br />
@@ -230,12 +240,13 @@ const ResearchAll = () => (
     <SectionHeader section={'Preprints'} />
     <ul>
       <WY2024c /><br />
-      <YAFBM2024 /><br />
       <AY2023 />
     </ul>
 
     <SectionHeader section={2024} />
     <ul>
+      <YAFBM2024 /><br />
+      <WY2024d /><br />
       <WY2024b /><br />
       <WY2024a />
     </ul>
