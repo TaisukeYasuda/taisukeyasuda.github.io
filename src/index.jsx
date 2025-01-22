@@ -2,8 +2,10 @@ import 'babel-polyfill';
 import * as JQuery from 'jquery';
 const $ = JQuery.default;
 
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+// import * as React from 'react';
+// import * as ReactDOM from 'react-dom';
+
+import { StrictMode, createRoot } from 'react-dom/client';
 
 import * as Components from './components/index';
 import './css/skeleton.css';
@@ -21,8 +23,10 @@ const App = () => (
 
 
 $(document).ready(() => {
-  ReactDOM.render(
-    <App />,
-    document.getElementById('root')
+  const root = createRoot(document.getElementById('root'));
+  root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
   );
 });
