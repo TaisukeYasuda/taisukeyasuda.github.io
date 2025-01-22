@@ -2,9 +2,6 @@ import 'babel-polyfill';
 import * as JQuery from 'jquery';
 const $ = JQuery.default;
 
-// import * as React from 'react';
-// import * as ReactDOM from 'react-dom';
-
 import { StrictMode, createRoot } from 'react-dom/client';
 
 import * as Components from './components/index';
@@ -25,8 +22,6 @@ const App = () => (
 $(document).ready(() => {
   const root = createRoot(document.getElementById('root'));
   root.render(
-  <StrictMode>
     <App />
-  </StrictMode>
   );
 });

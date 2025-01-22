@@ -1,8 +1,6 @@
-import * as React from 'react';
-
 const Footer = () => (
   <footer>
-    &copy; 2024 Taisuke Yasuda
+    &copy; 2025 Taisuke Yasuda
   </footer>
 );
 

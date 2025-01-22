@@ -30,7 +30,7 @@ const PubSection = ({ name }) => (<span style={{ fontSize: '18px', fontWeight: '
 // 
 
 
-const CJWY25 = () => (
+const CJWY2025 = () => (
   <li>
     <PubTitle title='Streaming Algorithms for $\ell_p$ Flows and $\ell_p$ Regression' /> <br />
     (with Amit Chakrabarti, Jeffrey Jiang, and David P. Woodruff) <br />
@@ -45,6 +45,7 @@ const WY2024d = () => (
     <PubTitle title='John Ellipsoids via Lazy Updates' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='NeurIPS 2024' /><br />
+    [<a href='https://arxiv.org/abs/2501.01801'>arXiv</a>]<br />
     <br />
     <Pitch pitch="Faster algorithms for approximating John ellipsoids" /><br />
   </li>
@@ -252,6 +253,11 @@ const ResearchAll = () => (
     <ul>
       <WY2024c /><br />
       <AY2023 />
+    </ul>
+
+    <SectionHeader section={2025} />
+    <ul>
+      <CJWY2025 />
     </ul>
 
     <SectionHeader section={2024} />
