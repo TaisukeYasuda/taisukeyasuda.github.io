@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 
 const sectionHeaderStyle = {
   width: '100%',
@@ -29,11 +29,23 @@ const PubSection = ({ name }) => (<span style={{ fontSize: '18px', fontWeight: '
 
 // 
 
+
+const CJWY2025 = () => (
+  <li>
+    <PubTitle title='Streaming Algorithms for $\ell_p$ Flows and $\ell_p$ Regression' /> <br />
+    (with Amit Chakrabarti, Jeffrey Jiang, and David P. Woodruff) <br />
+    <PubVenue name='ICLR 2025' /><br />
+    <br />
+    <Pitch pitch="Streaming algorithms and lower bounds for underdetermined $\ell_p$ regression" /><br />
+  </li>
+)
+
 const WY2024d = () => (
   <li>
     <PubTitle title='John Ellipsoids via Lazy Updates' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='NeurIPS 2024' /><br />
+    [<a href='https://arxiv.org/abs/2501.01801'>arXiv</a>]<br />
     <br />
     <Pitch pitch="Faster algorithms for approximating John ellipsoids" /><br />
   </li>
@@ -44,7 +56,7 @@ const WY2024c = () => (
     <PubTitle title='Nearly Linear Sparsification of $\ell_p$ Subspace Approximation' /> <br />
     (with David P. Woodruff) <br />
     <PubInSubmission /><br />
-    [<a href='https://arxiv.org/abs/2407.03262'>arXiv</a>]<br />
+    [<a href='https://arxiv.org/abs/2407.03262'>arXiv</a>] [<a href='/docs/slides/wy25.pdf'>slides</a>]<br />
     <br />
     <Pitch pitch="Nearly linear size strong coresets for $\ell_p$ subspace approximation" /><br />
   </li>
@@ -243,6 +255,11 @@ const ResearchAll = () => (
       <AY2023 />
     </ul>
 
+    <SectionHeader section={2025} />
+    <ul>
+      <CJWY2025 />
+    </ul>
+
     <SectionHeader section={2024} />
     <ul>
       <YAFBM2024 /><br />
@@ -356,7 +373,7 @@ const Teaching = () => (
 );
 
 const Academics = () => {
-  const [showAll, setShowAll] = React.useState(false);
+  const [showAll, setShowAll] = useState(false);
   return (
     <section id="academics" className="docs-section">
       <div className={showAll ? undefined : "hidden"}>
