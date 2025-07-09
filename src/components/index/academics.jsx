@@ -29,12 +29,23 @@ const PubSection = ({ name }) => (<span style={{ fontSize: '18px', fontWeight: '
 
 // 
 
+const WY2025 = () => (
+  <li>
+    <PubTitle title='Root Ridge Leverage Score Sampling for $\ell_p$ Subspace Approximation' /> <br />
+    (with David P. Woodruff) <br />
+    <PubVenue name='FOCS 2025' /><br />
+    [<a href='https://arxiv.org/abs/2407.03262'>arXiv</a>] [<a href='/docs/slides/wy25.pdf'>slides</a>]<br />
+    <br />
+    <Pitch pitch="Smaller coresets for $\ell_p$ subspace approximation using ridge leverage score sampling" /><br />
+  </li>
+)
 
 const CJWY2025 = () => (
   <li>
     <PubTitle title='Streaming Algorithms for $\ell_p$ Flows and $\ell_p$ Regression' /> <br />
     (with Amit Chakrabarti, Jeffrey Jiang, and David P. Woodruff) <br />
-    <PubVenue name='ICLR 2025' /><br />
+    <PubVenue name='ICLR 2025' />, selected for spotlight presentation<br />
+    [<a href='https://openreview.net/forum?id=Kpjvm2mB0K'>proceedings</a>] [<a href='/docs/posters/cjwy25.pdf'>poster</a>]<br />
     <br />
     <Pitch pitch="Streaming algorithms and lower bounds for underdetermined $\ell_p$ regression" /><br />
   </li>
@@ -45,20 +56,9 @@ const WY2024d = () => (
     <PubTitle title='John Ellipsoids via Lazy Updates' /> <br />
     (with David P. Woodruff) <br />
     <PubVenue name='NeurIPS 2024' /><br />
-    [<a href='https://arxiv.org/abs/2501.01801'>arXiv</a>]<br />
+    [<a href='https://arxiv.org/abs/2501.01801'>arXiv</a>] [<a href='https://openreview.net/forum?id=lCj0Rvr4D6'>proceedings</a>]<br />
     <br />
     <Pitch pitch="Faster algorithms for approximating John ellipsoids" /><br />
-  </li>
-)
-
-const WY2024c = () => (
-  <li>
-    <PubTitle title='Nearly Linear Sparsification of $\ell_p$ Subspace Approximation' /> <br />
-    (with David P. Woodruff) <br />
-    <PubInSubmission /><br />
-    [<a href='https://arxiv.org/abs/2407.03262'>arXiv</a>] [<a href='/docs/slides/wy25.pdf'>slides</a>]<br />
-    <br />
-    <Pitch pitch="Nearly linear size strong coresets for $\ell_p$ subspace approximation" /><br />
   </li>
 )
 
@@ -89,7 +89,7 @@ const YAFBM2024 = () => (
     <PubTitle title='SequentialAttention++ for Block Sparsification: Differentiable Pruning Meets Combinatorial Optimization' /> <br />
     (with Kyriakos Axiotis, Gang Fu, MohammadHossein Bateni, and Vahab Mirrokni) <br />
     <PubVenue name='NeurIPS 2024' /><br />
-    [<a href='https://arxiv.org/abs/2402.17902'>arXiv</a>]<br />
+    [<a href='https://arxiv.org/abs/2402.17902'>arXiv</a>] [<a href='https://openreview.net/forum?id=BrPZMOQiSN'>proceedings</a>]<br />
     <br />
     <Pitch pitch="Combining differentiable pruning and combinatorial optimization for neural network pruning" /><br />
   </li>
@@ -156,7 +156,7 @@ const WY2023a = () => (
     (with David P. Woodruff) <br />
     <PubVenue name='SODA 2023' /> <br />
     <PubSpecial name='Invited to the special issue for SODA 2023' /><br />
-    [<a href='https://arxiv.org/abs/2207.08268'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977554.ch175'>proceedings</a>] [<a href='/docs/slides/wy23_soda.pdf'>slides</a>]<br />
+    [<a href='https://arxiv.org/abs/2207.08268'>arXiv</a>] [<a href='https://doi.org/10.1137/1.9781611977554.ch175'>proceedings</a>] [<a href='https://doi.org/10.1145/3715127'>TALG</a>] [<a href='/docs/slides/wy23_soda.pdf'>slides</a>]<br />
     <br />
     <Pitch pitch="Optimal $\ell_p$ subspace embeddings in the online model and sliding windows" /><br />
   </li>
@@ -251,12 +251,12 @@ const ResearchAll = () => (
   <div className="research">
     <SectionHeader section={'Preprints'} />
     <ul>
-      <WY2024c /><br />
       <AY2023 />
     </ul>
 
     <SectionHeader section={2025} />
     <ul>
+      <WY2025 /><br />
       <CJWY2025 />
     </ul>
 
@@ -307,8 +307,7 @@ const ResearchSelected = () => (
   <div className="research">
     <SectionHeader section={'Selected'} />
     <ul>
-      <WY2024c /><br />
-      <AY2023 /><br />
+      <WY2025 /><br />
       <WY2023b /><br />
       <WY2023a /><br />
       <WY2022b /><br />
