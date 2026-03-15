@@ -19,9 +19,6 @@
   <!-- Mobile specific metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Vendor-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <script defer src="//use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
   <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet"  type="text/css">
 
   <!-- Fonts -->
@@ -41,13 +38,25 @@
 
   <!-- Preloader -->
   <script type="text/javascript">
-    //<![CDATA[
-      $(window).on('load', function() { // makes sure the whole site is loaded
-        $('#status').fadeOut(); // will first fade out the loading animation
-        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({'overflow':'visible'});
-      })
-    //]]>
+    window.addEventListener('load', function() {
+      var status = document.getElementById('status');
+      var preloader = document.getElementById('preloader');
+
+      if (status) {
+        status.classList.add('status-hidden');
+      }
+
+      window.setTimeout(function() {
+        if (preloader) {
+          preloader.classList.add('preloader-hidden');
+          window.setTimeout(function() {
+            preloader.style.display = 'none';
+          }, 600);
+        }
+
+        document.body.style.overflow = 'visible';
+      }, 350);
+    });
   </script>
 
 </body>

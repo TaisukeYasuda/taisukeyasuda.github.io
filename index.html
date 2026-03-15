@@ -20,14 +20,11 @@
   <meta name="author" content="Taisuke Yasuda">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <script defer src="//use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
   <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet"  type="text/css">
-  <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML,/assets/js/mathjax-config' async></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/vendor/katex-0.7.1/katex.min.css">
 
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,500,700">
   <link rel="stylesheet" type="text/css" href="/assets/js/index.css">
 </head>
 
@@ -37,27 +34,50 @@
     <div id="status">&nbsp;</div>
   </div>
 
-  <!-- TeX macros -->
-  <div>
-  \(
-    \def\nnz{{\mathsf{nnz}}}
-    \def\eps{{\varepsilon}}
-    \def\poly{{\mathrm{poly}}}
-  \)
-  </div>
-
   <div id="root"></div>
   <script src="/assets/js/index.bundle.js"></script>
+  <script src="/assets/vendor/katex-0.7.1/katex.min.js"></script>
+  <script src="/assets/vendor/katex-0.7.1/contrib/auto-render.min.js"></script>
+  <script type="text/javascript">
+    renderMathInElement(document.getElementById('root'), {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false,
+      macros: {
+        '\\eps': '\\varepsilon',
+        '\\nnz': '{\\mathsf{nnz}}',
+        '\\poly': '{\\mathrm{poly}}',
+        '\\Var': '\\operatorname{Var}',
+        '\\tr': '\\operatorname{tr}'
+      }
+    });
+  </script>
 
   <!-- Preloader -->
   <script type="text/javascript">
-    //<![CDATA[
-      $(window).on('load', function() { // makes sure the whole site is loaded
-        $('#status').fadeOut(); // will first fade out the loading animation
-        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({'overflow':'visible'});
-      })
-    //]]>
+    window.addEventListener('load', function() {
+      var status = document.getElementById('status');
+      var preloader = document.getElementById('preloader');
+
+      if (status) {
+        status.classList.add('status-hidden');
+      }
+
+      window.setTimeout(function() {
+        if (preloader) {
+          preloader.classList.add('preloader-hidden');
+          window.setTimeout(function() {
+            preloader.style.display = 'none';
+          }, 600);
+        }
+
+        document.body.style.overflow = 'visible';
+      }, 350);
+    });
   </script>
 
 </body>
