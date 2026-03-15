@@ -34,27 +34,33 @@
     <div id="status">&nbsp;</div>
   </div>
 
-  <div id="root"></div>
+  <div id="root" style="visibility: hidden;"></div>
   <script src="/assets/js/index.bundle.js"></script>
   <script src="/assets/vendor/katex-0.7.1/katex.min.js"></script>
   <script src="/assets/vendor/katex-0.7.1/contrib/auto-render.min.js"></script>
   <script type="text/javascript">
-    renderMathInElement(document.getElementById('root'), {
-      delimiters: [
-        { left: '$$', right: '$$', display: true },
-        { left: '\\[', right: '\\]', display: true },
-        { left: '$', right: '$', display: false },
-        { left: '\\(', right: '\\)', display: false }
-      ],
-      throwOnError: false,
-      macros: {
-        '\\eps': '\\varepsilon',
-        '\\nnz': '{\\mathsf{nnz}}',
-        '\\poly': '{\\mathrm{poly}}',
-        '\\Var': '\\operatorname{Var}',
-        '\\tr': '\\operatorname{tr}'
-      }
-    });
+    var root = document.getElementById('root');
+
+    try {
+      renderMathInElement(root, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '\\[', right: '\\]', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false }
+        ],
+        throwOnError: false,
+        macros: {
+          '\\eps': '\\varepsilon',
+          '\\nnz': '{\\mathsf{nnz}}',
+          '\\poly': '{\\mathrm{poly}}',
+          '\\Var': '\\operatorname{Var}',
+          '\\tr': '\\operatorname{tr}'
+        }
+      });
+    } finally {
+      root.style.visibility = 'visible';
+    }
   </script>
 
   <!-- Preloader -->
