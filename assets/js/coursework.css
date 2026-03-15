@@ -177,6 +177,143 @@ pre > code {
   white-space: pre; }
 
 body {
+  font-family: 'Noto Sans', sans-serif;
+  overflow: hidden; }
+
+.container {
+  max-width: 900px; }
+.header {
+  width: 100%;
+  margin-top: 2rem;
+  border-bottom: 1px solid #ddd; }
+
+.navbar-link:hover {
+  text-decoration: none; }
+
+section {
+  padding: 1em; }
+
+
+footer {
+  width: 100%;
+  /* border-top: 1px solid #9F3ED5; */
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center; }
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#fff; /* change if the mask should have another color then white */
+  z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+  width:200px;
+  height:200px;
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  /*background-image:url(../img/status.gif);*/ /* path to your loading animation */
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+.hidden { display: none; }
+body {
   font-family: 'Ubuntu', sans-serif;
   overflow: hidden; }
+
+.header-title {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.header-title__strong,
+.header-contact-label,
+.academics-pub-venue,
+.academics-pub-section {
+  font-weight: bold;
+}
+
+.header-photo {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.header-clear {
+  clear: both;
+}
+
+.academics-section-header {
+  border-bottom: 1px solid #ddd;
+  color: #999;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  text-align: right;
+  width: 100%;
+}
+
+.academics-section-header__label {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.academics-pitch {
+  color: green;
+}
+
+.academics-pub-title {
+  font-size: 17px;
+}
+
+.academics-pub-special {
+  color: red;
+  font-weight: bold;
+}
+
+.academics-pub-section {
+  font-size: 18px;
+}
+
+.academics-teaching-table {
+  width: 100%;
+}
+
+.academics-toggle {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-sizing: content-box;
+  color: #1eaedb;
+  cursor: pointer;
+  display: inline;
+  font: inherit;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: normal;
+  line-height: inherit;
+  padding: 0;
+  text-align: inherit;
+  text-transform: none;
+  white-space: normal;
+}
+
+.academics-toggle:hover {
+  color: #0fa0ce;
+  text-decoration: underline;
+}
+
+.coursework-semesters td {
+  vertical-align: top;
+}
 

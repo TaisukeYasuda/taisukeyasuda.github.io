@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Footer = () => (
   <footer>
     &copy; 2025 Taisuke Yasuda

@@ -1,27 +1,23 @@
-import 'babel-polyfill';
-import * as JQuery from 'jquery';
-const $ = JQuery.default;
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
-import { StrictMode, createRoot } from 'react-dom/client';
-
-import * as Components from './components/index';
+import { Academics, Footer, Header, Personal } from './components/index';
 import './css/skeleton.css';
 import './css/style.css';
 import './css/sticky.css';
+import './css/index.css';
 
 const App = () => (
   <div className="container">
-    <Components.Header />
-    <Components.Academics />
-    <Components.Personal />
-    <Components.Footer />
+    <Header />
+    <Academics />
+    <Personal />
+    <Footer />
   </div>
 );
 
+const rootElement = document.getElementById('root');
 
-$(document).ready(() => {
-  const root = createRoot(document.getElementById('root'));
-  root.render(
-    <App />
-  );
-});
+if (rootElement) {
+  createRoot(rootElement).render(<App />);
+}
